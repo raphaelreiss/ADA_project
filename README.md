@@ -1,11 +1,13 @@
 # ADA_project
 
 # Title
+
 # Abstract
 
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 # Research questions
-
+1. Is there any correlation between income and purchase habits
+2.  
 A list of research questions you would like to address during the project.
 # Dataset
 
