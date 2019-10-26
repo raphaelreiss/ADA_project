@@ -2,7 +2,7 @@
 
 # Abstract
 
-In this project, we aim to tell a very complete and sometimes suprisingly detailed story about the identity of the people that participated in the survey of shopping habits. We believe that despite their anonimity, we are able to get to know the people behind those transactions.
+In this project, we aim to tell a very complete and sometimes suprisingly detailed story about the identity of the people that participated in the survey of shopping habits. We believe that despite their anonimity, we are able to get to know the people behind those transactions. We are going to analsyse all the possible parameters to enable thus to get strong relevant insights into their shopping habits. We aim to analyse behaviour on all possible levels, from macro-trends of the whole sample all the way down to individual specific comsumption patterns.
 
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
@@ -16,7 +16,7 @@ A 150 word description of the project idea, goals, dataset used. What story you 
   - Income
   - Age category
   - Size of household, number of children
-- Correlate total amount of calories consumed per houshold with health parameters (obesitsy) ? -> combination with health dataset
+- Correlate total amount of calories consumed per houshold with health parameters
 - Determine family stability (definition of stability?) according to consumption
 - Predict individual behaviour based on consumption
 - Identify consumption patterns that are suggestive of addiction (alcohol, tobacco, prescription drugs)
@@ -28,6 +28,7 @@ A 150 word description of the project idea, goals, dataset used. What story you 
 - Identify different shopper profiles using unsupervised clustering
 - Identify items that are only purchased at specific times of day
 - Observe seasonal variation of shooping trends (Holiday season)
+- Predict the date and amount of the next transaction
 
 # Dataset
 - Dunnhumby: The complete journey, csv 300mb
