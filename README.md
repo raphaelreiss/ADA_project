@@ -2,9 +2,7 @@
 
 # Abstract
 
-In this project, we aim to tell a very complete and sometimes suprisingly detailed story about the identity of the people that participated in the survey of shopping habits. We believe that despite their anonimity, we are able to get to know the people behind those transactions. We are going to analsyse all the possible parameters to enable thus to get strong relevant insights into their shopping habits. We aim to analyse behaviour on all possible levels, from macro-trends of the whole sample all the way down to individual specific comsumption patterns.
-
-A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
+In this project, we aim to tell a very complete and sometimes suprisingly detailed story about the identity of the people that participated in the survey of shopping habits. We believe that despite their anonymity, we are able to get to know the people behind those transactions. We are going to analyse all the possible parameters to enable thus to get strong relevant insights into their shopping habits. We aim to analyse behaviour on all possible levels, from macro-trends of the whole sample all the way down to individual specific comsumption patterns.
 
 # Research questions
 - How to deal with "card usage bias"
