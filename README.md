@@ -1,11 +1,11 @@
 # ADA_project: You are what you eat
 
-# Abstract
+## Abstract
 
 In this project, we aim to tell a comprehensive and sometimes surprisingly detailed story regarding the identity of participants in a survey on shopping habits. We believe that despite their anonymity, we are able to acquaint ourselves with the individuals behind these transactions. Here we illustrate our process, whereby observation of subjects’ behaviour on multiple levels and analysis of sample parameters, from macro-trends all the way down to specific individual consumption patterns, enable us to gain such insight.
 
-# Research questions
-## 1. Dealing with bias
+## Research questions
+### 1. Dealing with bias
   1.1: "Card usage" bias: We need to be aware that the information comes from the subsample of population that uses the shopping cards. These users might be younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this demographic.  
   
   1.2: Location bias (living far from the store): Can we assume that most of the buyers live in the area of the store? 
