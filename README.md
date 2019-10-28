@@ -2,7 +2,8 @@
 
 # Abstract
 
-In this project, we aim to tell a very complete and detailed story about the identity of the people who participated in the survey of shopping habits. We believe that despite their anonymity, we are able to get relevant information about the people behind those transactions. We are going to analyse as many possible parameters to enable thus to get strong relevant insights into their shopping habits. We aim to analyse behaviour on all possible levels, from macro-trends of the whole sample all the way down to individual specific comsumption patterns.
+In this project, we aim to tell a comprehensive and sometimes surprisingly detailed story regarding the identity of participants in a survey on shopping habits. We believe that, despite their anonymity, we are able to acquaint ourselves with the individuals behind these transactions.ctions. We are going to analyse all the possible parameters to enable thus to get strong relevant insights into their shopping habits. We aim to analyse behaviour on all possible levels, from macro-trends of the whole sample all the way down to individual specific comsumption patterns.
+
 
 # Research questions
 q1: Since we want to look at the correlation of different parameters with shopping habbits. We must develop metrics to assess the shopping    habbits. What kind of metrics should we use to assess shopping habbits?  
