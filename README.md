@@ -13,27 +13,45 @@ q1: Since we want to look at the correlation of different parameters with shoppi
       -diversity or entropy measure of bought items(Does a family buy vegetables, proteins, grains, breads, etc. Or only one kind of            item?)
       - nutrient value (compare equivalent nutrient amount in bought foods with recommended nutrient intake per person per time).
 q2: How can we deal with different biases?
+
   q2.1: "card usage" bias: We must be aware that the information comes from the subsample that uses the shopping cards. These users       might be     younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this           demographic.  
+  
   q2.2: Location bias (living far from the store): Can we assume that most of the buyers live in the area of the store? 
+  
   q2.3: Time bias: For how long did the study take place? 
+  
   q2.4: Frequency bias: How can we balance the transaction expense with the frequency of the transactions. For example, someone might go   very often and buy very few items, while someone might go a single time per month and buy many things. 
 
 q3: Influence of demographic factors on shopping habits. 
   
   q3.1: How is income related to shopping habits? 
+  
   q3.2: How is age related to shopping habits?
+  
   q3.3: How is the size of household, or the family structure related to shopping habits?
+  
   q3.4: Correlate total amount of calories consumed per houshold with health parameters
+  
   q3.5: Determine family stability (definition of stability?) according to consumption
+  
   q3.6: Predict individual behaviour based on consumption
+  
   q3.7: Identify consumption patterns that are suggestive of addiction (alcohol, tobacco, prescription drugs)
+  
   q3.8 Effect of marketing strategies (coupons) on customer engagement
+  
   q3.9: Time spent in store and amount spent
+  
   q3.10: Budgeting: calculate price per kilo and identify outliers that appear systematically to track consumption 
+  
   q3.11: Correlate macro-consumption trends with important local news events
+  
   q3.12: Identify different shopper profiles using unsupervised clustering
+  
   q3.13: Identify items that are only purchased at specific times of day
-  q3.14: Observe seasonal variation of shooping trends (Holiday season)
+  
+  q3.14: Observe seasonal variation of shoping trends (Holiday season)
+  
   q3.15: Predict the date and amount of the next transaction
 
 # Dataset
