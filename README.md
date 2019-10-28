@@ -63,7 +63,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
   
   4.7: Time spent in store and amount spent  
 
-## Usage of supplementary datasets
+## Usage of additional datasets
 - A WHO dataset on health in the region (Atlanta): this would allow us to find a potential correlation between caloric intake and health state by using parameters such as prevalence of diabetes or obesity per neighborhood.
 - Dunnhumby: Carbo-loading (_csv 115mb_): Carbo-loading dataset to retrieve the zip codes of the stores in the study to be able to make geographical analysis.
 - Dataset with nutritional facts of food items sold: Nutritional info dataset to be able to calculate the food consumption for each household and compare it against recommended amount, while taking demographics into account
