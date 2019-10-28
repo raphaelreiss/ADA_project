@@ -14,7 +14,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
   q1.3: Time bias: For how long did the study take place? At what time was it done?
   
   q1.4: Frequency bias: How can we balance the transaction expense with the frequency of the transactions. For example, someone might go   very often and buy very few items, while someone might go a single time per month and buy many things. 
- **2. Metrics**
+ ## 2. Metrics
   q2: Since we want to look at the correlation of different parameters related to shopping habbits, we must research/use/develop adapted metrics in order to assess these datas.
     
     First ideas:
@@ -29,7 +29,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
       
       - nutrient value (compare equivalent nutrient amount in bought foods with recommended nutrient intake per person per time).
 
- **3. Categories Discovery (supervised / unsupervised learning)**
+ ## 3. Categories Discovery (supervised / unsupervised learning)
   q3: Influence of demographic factors on shopping habits. 
   
   q3.1: How is income related to shopping habits? 
@@ -49,7 +49,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
   q3.8: Correlate macro-consumption trends with important local news events
 
 
-  **4. Creating Useful Tools**
+  ## 4. Creating Useful Tools
   q4.1: Create a suggestion method which given the budget profile/nutrition habit of the customer would allow him to purchase more nutritious and balanced food for an equivalent price
   
   q4.2: Suggest to the customer the best time when to do his groceries according to the affluence
@@ -71,7 +71,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
 - Dataset with nutritional facts of food items sold
 - Dataset with local news. (ex: Atlanta New Now)
 
-## Usage of supplementary datasets
+# Usage of supplementary datasets
 - Dataset on health to make the correlation between caloric intake and health state by using parameters such as prevalence of diabetes or obesity per neighborhood.
 - Carbo-loading dataset to retrieve the zip codes of the stores in the study to be able to make geographical analysis.
 - Nutritional info dataset to be able to calculate the food consumption for each household and compare it against recommended amount, while taking demographics into account
