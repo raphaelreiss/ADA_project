@@ -6,9 +6,18 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
 
 
 # Research questions
-q1: Since we want to look at the correlation of different parameters with shopping habbits. We must develop metrics to assess the shopping    habbits. What kind of metrics should we use to assess shopping habbits?  
+**1. Dealing with bias**
+  q1.1: "card usage" bias: We must be aware that the information comes from the subsample that uses the shopping cards. These users might be younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this demographic.  
+  
+  q1.2: Location bias (living far from the store): Can we assume that most of the buyers live in the area of the store? 
+  
+  q1.3: Time bias: For how long did the study take place? At what time was it done?
+  
+  q1.4: Frequency bias: How can we balance the transaction expense with the frequency of the transactions. For example, someone might go   very often and buy very few items, while someone might go a single time per month and buy many things. 
+ **2. Metrics**
+  q2: Since we want to look at the correlation of different parameters related to shopping habbits, we must research/use/develop adapted metrics in order to assess these datas.
     
-    Proposed answer: These are the metrics we can try:
+    First ideas:
     
       -quality of bought items (bio,organic, processed,"junk",etc)
       
@@ -16,21 +25,12 @@ q1: Since we want to look at the correlation of different parameters with shoppi
       
       -frequency of transactions
       
-      -diversity or entropy measure of bought items(Does a family buy vegetables, proteins, grains, breads, etc. Or only one kind of            item?)
+      -diversity or entropy measure of bought items(Does a family buy vegetables, proteins, grains, breads, etc. Or only one kind of item?)
       
       - nutrient value (compare equivalent nutrient amount in bought foods with recommended nutrient intake per person per time).
 
-q2: How can we deal with different biases?
-
-  q2.1: "card usage" bias: We must be aware that the information comes from the subsample that uses the shopping cards. These users       might be     younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this           demographic.  
-  
-  q2.2: Location bias (living far from the store): Can we assume that most of the buyers live in the area of the store? 
-  
-  q2.3: Time bias: For how long did the study take place? 
-  
-  q2.4: Frequency bias: How can we balance the transaction expense with the frequency of the transactions. For example, someone might go   very often and buy very few items, while someone might go a single time per month and buy many things. 
-
-q3: Influence of demographic factors on shopping habits. 
+ **3. Categories Discovery (supervised / unsupervised learning)**
+  q3: Influence of demographic factors on shopping habits. 
   
   q3.1: How is income related to shopping habits? 
   
@@ -40,27 +40,29 @@ q3: Influence of demographic factors on shopping habits.
   
   q3.4: Correlate total amount of calories consumed per houshold with health parameters
   
-  q3.5: Determine family stability (definition of stability?) according to consumption
+  q3.5: Budgeting: calculate price per kilo and identify outliers that appear systematically to track consumption 
   
-  q3.6: Predict individual behaviour based on consumption
+  q3.6: Identify items that are only purchased at specific times of day
+
+  q3.7: Observe seasonal variation of shoping trends (Holiday season)
   
-  q3.7: Identify consumption patterns that are suggestive of addiction (alcohol, tobacco, prescription drugs)
+  q3.8: Correlate macro-consumption trends with important local news events
+
+
+  **4. Creating Useful Tools**
+  q4.1: Create a suggestion method which given the budget profile/nutrition habit of the customer would allow him to purchase more nutritious and balanced food for an equivalent price
   
-  q3.8 Effect of marketing strategies (coupons) on customer engagement
+  q4.2: Suggest to the customer the best time when to do his groceries according to the affluence
   
-  q3.9: Time spent in store and amount spent
+  q4.3: Identify consumption patterns that are suggestive of addiction (alcohol, tobacco, prescription drugs)
   
-  q3.10: Budgeting: calculate price per kilo and identify outliers that appear systematically to track consumption 
+  q4.4: Predict as precisely as possible consumption of perishable food (such as vegetable) in order to prevent food waste.
   
-  q3.11: Correlate macro-consumption trends with important local news events
+  q3.5: Predict the date and amount of the next transaction
+
+  q4.6 Predict the Effect of marketing strategies (coupons) on customer engagement
   
-  q3.12: Identify different shopper profiles using unsupervised clustering
-  
-  q3.13: Identify items that are only purchased at specific times of day
-  
-  q3.14: Observe seasonal variation of shoping trends (Holiday season)
-  
-  q3.15: Predict the date and amount of the next transaction
+  q4.7: Time spent in store and amount spent  
 
 # Dataset
 - Dunnhumby: The complete journey, csv 300mb
