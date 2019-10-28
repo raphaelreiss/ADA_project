@@ -6,7 +6,7 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
 
 
 # Research questions
-**1. Dealing with bias**
+## 1. Dealing with bias
   q1.1: "card usage" bias: We must be aware that the information comes from the subsample that uses the shopping cards. These users might be younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this demographic.  
   
   q1.2: Location bias (living far from the store): Can we assume that most of the buyers live in the area of the store? 
