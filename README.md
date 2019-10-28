@@ -6,12 +6,19 @@ In this project, we aim to tell a very complete and detailed story about the ide
 
 # Research questions
 q1: Since we want to look at the correlation of different parameters with shopping habbits. We must develop metrics to assess the shopping    habbits. What kind of metrics should we use to assess shopping habbits?  
+    
     Proposed answer: These are the metrics we can try:
+    
       -quality of bought items (bio,organic, processed,"junk",etc)
+      
       -transaction value
+      
       -frequency of transactions
+      
       -diversity or entropy measure of bought items(Does a family buy vegetables, proteins, grains, breads, etc. Or only one kind of            item?)
+      
       - nutrient value (compare equivalent nutrient amount in bought foods with recommended nutrient intake per person per time).
+
 q2: How can we deal with different biases?
 
   q2.1: "card usage" bias: We must be aware that the information comes from the subsample that uses the shopping cards. These users       might be     younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this           demographic.  
