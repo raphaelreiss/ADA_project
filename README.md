@@ -31,21 +31,21 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
  ### 3. Categories Discovery (supervised / unsupervised learning)
   3.1: Influence of demographic factors on shopping habits. 
   
-  q3.2: How is income related to shopping habits? 
+  3.2: How is income related to shopping habits? 
   
-  q3.3: How is age related to shopping habits?
+  3.3: How is age related to shopping habits?
   
-  q3.4: How is the size of household, or the family structure related to shopping habits?
+  3.4: How is the size of household, or the family structure related to shopping habits?
   
-  q3.5: Correlate total amount of calories consumed per houshold with health parameters
+  3.5: Correlate total amount of calories consumed per houshold with health parameters
   
-  q3.6: Budgeting: calculate price per kilo and identify outliers that appear systematically to track consumption 
+  3.6: Budgeting: calculate price per kilo and identify outliers that appear systematically to track consumption 
   
-  q3.7: Identify items that are only purchased at specific times of day
+  3.7: Identify items that are only purchased at specific times of day
 
-  q3.8: Observe seasonal variation of shoping trends (Holiday season)
+  3.8: Observe seasonal variation of shoping trends (Holiday season)
   
-  q3.9: Correlate macro-consumption trends with important local news events
+  3.9: Correlate macro-consumption trends with important local news events
 
 
   ### 4. Creating Useful Tools
