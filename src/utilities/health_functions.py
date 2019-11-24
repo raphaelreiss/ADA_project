@@ -6,7 +6,7 @@ import pandas as pd
 import nltk
 
 #definition of stopwords
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords 
 STOP_WORDS = list(set(stopwords.words('english')))
 STOP_WORDS.append('NFS')
@@ -15,7 +15,7 @@ to_delete = ["added","ns","made","eaten","type","all","as","to","of"]
 STOP_WORDS.append(to_delete)
 
 #definition of foodwords
-nltk.download('wordnet')
+#nltk.download('wordnet')
 from nltk.corpus import wordnet as wn
 food = wn.synset('food.n.02')
 FOOD_WORDS = list(set([w for s in food.closure(lambda s:s.hyponyms()) for w in s.lemma_names()]))
@@ -67,7 +67,7 @@ def normalize_text(str1):
     """
     simplifies the names of the foods for easier access afterwards
     """
-    #matches any separator and any whitespace and transforms to mathc to lower case
+    #matches any separator and any whitespace and transforms to lower case
     temp = re.sub("[;&@\/:,\*\.\(\)\{\}\\%\"\']", ' ', str1)
     temp = temp.lower()
     words = temp.split()
@@ -174,7 +174,7 @@ def find_food(test,food_list, dic_score,verb = True):
         sizes = [len(i) for i in matches_df["match"]]
         #sizes = [len(i) for i in matches]
         minsize = np.min(sizes)
-        minsiz_matches_df = matches_df[(matches_df.match.apply(len).values) == minsize]
+        minsiz_matches_df = matches_df[(matches_df.match.apply(len).values) == minsize].copy()
         #minsiz_matches_df = [i for i in matches if len(i) == minsize]
         if minsiz_matches_df.size == 1:
             printo("Single match of minsize:{}".format(minsiz_matches.loc[0]["match"]),verb)
@@ -182,13 +182,13 @@ def find_food(test,food_list, dic_score,verb = True):
         else:
             #printo("Many matches of minsize:{}".format(minsiz_matches),verb)
             #scores = [np.sum([dic_score.get(j,0) for j in trial]) for trial in minsiz_matches]
-            minsiz_matches_df["scores"] = [np.sum([dic_score.get(j,0) for j in trial]) for trial in minsiz_matches_df["match"]]
+            minsiz_matches_df.loc[:,"scores"] = [np.sum([dic_score.get(j,0) for j in trial]) for trial in minsiz_matches_df["match"]]
             
             #for i,j in zip(minsiz_matches,scores):
                 #printo("{} match has {} score".format(i,j),verb)
             
             #armin_imp = np.argmin(scores)
-            #printo("Match of smallest importance:{}".format(minsiz_matches[armin_imp]),verb)
+            #printo("Match of smallest importance:{}".format(minsiz_matches_df["scores"].min()),verb)
             #return minsiz_matches[armin_imp]
             return minsiz_matches_df.loc[minsiz_matches_df.scores.idxmin()][["match","fdc_id"]]
         
