@@ -10,9 +10,12 @@ import nltk
 from nltk.corpus import stopwords 
 STOP_WORDS = list(set(stopwords.words('english')))
 STOP_WORDS.append('NFS')
-#Manual addition of words that we want to ignore to the Stopwords list
-to_delete = ["added","ns","made","eaten","type","all","as","to","of"]
-STOP_WORDS.append(to_delete)
+#Manual addition of words that we want to ignore to the Stopwords list 
+to_delete = ["added","ns","made","eaten","type","all","as","to","of","shelf","canned","stable","whole","white","cut","whl",\
+             "white","bulk","bag","sgl","srv","packs","sgl","fs","fluid","frzn","dinners","frozen","economy","pouches",\
+             "iws","mxs","dry","mix","pkg","btl","gds","refrgratd","multi","pack","entrees","iqf","stick",\
+             "deli","paper","bkd","total"]
+STOP_WORDS = STOP_WORDS + to_delete
 
 #definition of foodwords
 #nltk.download('wordnet')
@@ -22,8 +25,9 @@ FOOD_WORDS = list(set([w for s in food.closure(lambda s:s.hyponyms()) for w in s
 
 #We see words in the product dataset, we would like to write them out completely for clarity
 #TO ADD: SNKSCKYS/CRKR/CNDY
-to_transform = dict({"frzn":"frozen","refrgratd":"refrigerated","brkfst":"breakfast","whlsm":"wholesome",\
-                     "crkr":"cracker","cndy":"candy"})
+to_transform = dict({"frzn":"frozen","refrgratd":"refrigerated","brkfst":"breakfast",\
+                     "whlsm":"wholesome","crkr":"cracker","cndy":"candy","btl":"bottle",\
+                     "sft":"soft","flvrd":"flavored","pwdr":"powder","pnt":"peanut","btr":"butter"})
 
 def parse_words(str1): 
     """
@@ -34,7 +38,7 @@ def parse_words(str1):
     str1 = list(filter(None,re.split("[\s;&@\/:,\*\.\(\)\{\}\\-%\"\'0-9\_]",str1)))
     #remove duplicate word, as there are many
     str1 = list(dict.fromkeys(str1))
-    str1 = [i for i in str1 if not i in STOP_WORDS]
+    str1 = [i for i in str1 if ((not i in STOP_WORDS) and (len(i) > 2))]
     str1 = [to_transform[i] if i in to_transform else i for i in str1]
     
     return str1
@@ -46,7 +50,7 @@ def trim_nutrient_name(temp):
     #matches any separator and any whitespace and transforms to match to lower case
     temp = temp.lower()
     temp = list(filter(None,re.split("[;&@\/:,\*\.\(\)\{\}\\%\"\']",temp)))
-    #remove duplicate word, as there are many
+    #remove duplicate words, as there are many
     temp = [i for i in temp if not i in STOP_WORDS]
     if(temp[0] == "fatty acids"):
         return str.strip(temp[0] + temp[1])
@@ -145,6 +149,8 @@ def find_food(test,food_list, dic_score,verb = True):
         if verb:
             print(stringo)
     
+    print(test)
+    
     #printo("############# Analyzing the sample:{}###########".format(test),verb)
     if len(test) == 0:
         #give up the sample
@@ -203,7 +209,10 @@ def get_nutrient_amount(product_id,nutrient,products_df1,food_nutrients_df1):
     mask = (products_df1["PRODUCT_ID"] == product_id)
     if any(mask):
         index = products_df1[mask].ref_fdc_id.values[0]
-        return food_nutrients_df1.loc[index,nutrient]["amount"].values[0]
+        return food_nutrients_df1.loc[index,nutrient].values[0]
     else:
         print("Product not found")
         return 0
+    
+   
+    
