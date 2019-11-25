@@ -18,22 +18,22 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
 ### 2. Research questions
   2.1: Influence of demographic factors on shopping habits.
 
-    * How is income related to shopping habits?
+    2.1.1 How is income related to shopping habits?
 
-    * How is age related to shopping habits?
+    2.1.2 How is age related to shopping habits?
 
-    * How is the size of household, or the family structure related to shopping habits?
+    2.1.3 How is the size of household, or the family structure related to shopping habits?
 
   2.2: Correlate total amount of calories consumed per household with health parameters
 
   2.3: Analysis and identification of un/healthy shopping habits.
 
   2.4: Time series analysis /
-    * Even with time absolute value, is it possible to find the season of the year where the data was sampled ?
+    2.4.1 Even with time absolute value, is it possible to find the season of the year where the data was sampled ?
 
-    * Identify items that are only purchased at specific times of day
+    2.4.2 Identify items that are only purchased at specific times of day
 
-    * Trending products (identify items that are only purchased at specific times of day)
+    2.4.3 Trending products (identify items that are only purchased at specific times of day)
 
   2.5 (Clustering) Find out amount of calories consumed per household and make groups out of it (obesity detection)
 
