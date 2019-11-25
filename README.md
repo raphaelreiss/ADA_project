@@ -9,14 +9,14 @@ In this project, we aim to tell a comprehensive and sometimes surprisingly detai
   #### 1.1: "Card usage" bias: 
   We need to be aware that the information comes from the subsample of population that uses the shopping cards. These users might be younger and technologically savyer than the typical buyer. The consumption patterns might be skewed towards this demographic.  
 
-  #### 1.2: Location bias (living far from the store):
+  #### 1.2 Location bias (living far from the store):
   Can we assume that most of the buyers live in the area of the store?
 
-  #### 1.3:
-  Time bias: For how long did the study take place? At what time was it done?
+  #### 1.3 Time bias: 
+  For how long did the study take place? At what time was it done?
 
-  #### 1.4:
-  Frequency bias: How can we balance the transaction expense with the frequency of the transactions. For example, someone might go very often and buy very few items, while someone might go a single time per month and buy many things.
+  #### 1.4 Frequency bias: 
+  How can we balance the transaction expense with the frequency of the transactions. For example, someone might go very often and buy very few items, while someone might go a single time per month and buy many things.
 
 
 ### 2. Research questions
