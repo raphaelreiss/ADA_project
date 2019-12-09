@@ -4,6 +4,7 @@ import re
 import numpy as np
 import pandas as pd
 import nltk
+from nltk.stem.porter import *
 
 #definition of stopwords
 #nltk.download('stopwords')
@@ -21,7 +22,7 @@ STOP_WORDS = STOP_WORDS + to_delete
 #nltk.download('wordnet')
 from nltk.corpus import wordnet as wn
 food = wn.synset('food.n.02')
-FOOD_WORDS = list(set([w for s in food.closure(lambda s:s.hyponyms()) for w in s.lemma_names()]))
+FOOD_WORDS = list(set([w for s in food.closure(lambda s:s.hyponyms()) for w in s.lemma_names()])) + ['drink']
 
 #We see words in the product dataset, we would like to write them out completely for clarity
 #TO ADD: SNKSCKYS/CRKR/CNDY
@@ -40,7 +41,8 @@ def parse_words(str1):
     str1 = list(dict.fromkeys(str1))
     str1 = [i for i in str1 if ((not i in STOP_WORDS) and (len(i) > 2))]
     str1 = [to_transform[i] if i in to_transform else i for i in str1]
-    
+    stemmer = PorterStemmer()
+    str1 = [stemmer.stem(i) for i in str1]
     return str1
 
 def trim_nutrient_name(temp):
@@ -103,7 +105,7 @@ def get_matches(test:list,food_list):
     assert(type(test[0]) == str)
     res = []
     fdc_id = []
-    for word_list,id_ in food_list[["description","fdc_id"]].itertuples(index=False):
+    for word_list,id_ in food_list[["nut_ingredients","fdc_id"]].itertuples(index=False):
         if all([word_test in word_list for word_test in test]):
             res.append(word_list)
             fdc_id.append(id_)
@@ -138,13 +140,16 @@ def construct_dic_score(common_w):
     dic_score = pd.Series(dic_score.score.values,index = dic_score.index).to_dict()
     return dic_score
 
-def find_food(test,food_list, dic_score,verb = True):
+def find_food(test,food_list, dic_score,verb = False):
     """
     implementation of the graphic above
     test = list of strings to test
     food_list: pandas dataframe linking the food article/id to the lists of words of its name
     return the best article's ingredient list AND fdc_id
     """
+    if verb:
+        print('run! ',test)
+        
     def printo(stringo,verb): 
         if verb:
             print(stringo)
