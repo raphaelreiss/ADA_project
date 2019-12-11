@@ -5,17 +5,18 @@ import numpy as np
 import pandas as pd
 import nltk
 from nltk.stem.porter import *
+from IPython.core.debugger import set_trace
 
 #definition of stopwords
 #nltk.download('stopwords')
 from nltk.corpus import stopwords 
 STOP_WORDS = list(set(stopwords.words('english')))
-STOP_WORDS.append('NFS')
+STOP_WORDS  = STOP_WORDS + ['NFS','raw']
 #Manual addition of words that we want to ignore to the Stopwords list 
 to_delete = ["added","ns","made","eaten","type","all","as","to","of","shelf","canned","stable","whole","white","cut","whl",\
              "white","bulk","bag","sgl","srv","packs","sgl","fs","fluid","frzn","dinners","frozen","economy","pouches",\
              "iws","mxs","dry","mix","pkg","btl","gds","refrgratd","multi","pack","entrees","iqf","stick",\
-             "deli","paper","bkd","total"]
+             "deli","paper","bkd","total","raw"]
 STOP_WORDS = STOP_WORDS + to_delete
 
 #definition of foodwords
