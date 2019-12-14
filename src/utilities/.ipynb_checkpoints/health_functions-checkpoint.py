@@ -6,6 +6,11 @@ import pandas as pd
 import nltk
 from nltk.stem.porter import *
 from IPython.core.debugger import set_trace
+import spacy
+
+nlp = spacy.load('en')
+
+
 
 #definition of stopwords
 #nltk.download('stopwords')
@@ -24,12 +29,11 @@ STOP_WORDS = STOP_WORDS + to_delete
 from nltk.corpus import wordnet as wn
 food = wn.synset('food.n.02')
 FOOD_WORDS = list(set([w for s in food.closure(lambda s:s.hyponyms()) for w in s.lemma_names()])) + ['drink']
-
 #We see words in the product dataset, we would like to write them out completely for clarity
 #TO ADD: SNKSCKYS/CRKR/CNDY
 to_transform = dict({"frzn":"frozen","refrgratd":"refrigerated","brkfst":"breakfast",\
                      "whlsm":"wholesome","crkr":"cracker","cndy":"candy","btl":"bottle",\
-                     "sft":"soft","flvrd":"flavored","pwdr":"powder","pnt":"peanut","btr":"butter"})
+                     "sft":"soft","flvrd":"flavored","pwdr":"powder","pnt":"peanut","btr":"butter","drnk":"drink","mneral":"mineral","wate":"water","miner":"mineral"})
 
 def parse_words(str1): 
     """
@@ -44,6 +48,13 @@ def parse_words(str1):
     str1 = [to_transform[i] if i in to_transform else i for i in str1]
     stemmer = PorterStemmer()
     str1 = [stemmer.stem(i) for i in str1]
+    return str1
+    
+PARSED_FOOD_WORDS = [parse_words(i) for i in FOOD_WORDS]
+
+def parse_words_comm(str1,pfood_words = PARSED_FOOD_WORDS):
+    str1 = parse_words(str1)
+    str1 = [i for i in str1 if i in PARSED_FOOD_WORDS]
     return str1
 
 def trim_nutrient_name(temp):
@@ -120,7 +131,12 @@ def construct_dic_score(common_w):
     The rest of the score is a max-normalized ratio of the occurence in the product dataset.
     
     return a dic where each of these common names + food_words have their score linked
-    """
+    """    
+    def get_name_score(x):
+        doc = nlp(x)
+        if doc[0].pos_ == 'NOUN':
+            return 0.7
+        return 0
     common_w = common_w.copy()
     maxo = common_w.number_supermarket.max()
     common_w.number_supermarket = common_w.number_supermarket / maxo
@@ -132,11 +148,17 @@ def construct_dic_score(common_w):
     food_word_df.name = food_word_df.name.apply(parse_words)
     food_word_df = food_word_df.explode('name')
     food_word_df.drop_duplicates(inplace = True)
-    food_word_df.fillna(1,inplace = True)
+    #set_trace()
+    food_word_df.number_supermarket.fillna(1,inplace = True)
+    food_word_df.dropna(inplace = True)
 
     dic_score = pd.concat([food_word_df,common_w])
     dic_score = dic_score.rename(columns = {"number_supermarket":"score"})
-    dic_score = dic_score.groupby("name").sum()
+    #set_trace()
+    dic_score = dic_score.groupby("name").sum().reset_index()
+    #we add 1 if the word is a non
+    dic_score.score = dic_score["name"].apply(get_name_score) + dic_score.score
+    dic_score.set_index('name',inplace = True)
     dic_score.sort_values('score',ascending = False)
     dic_score = pd.Series(dic_score.score.values,index = dic_score.index).to_dict()
     return dic_score
