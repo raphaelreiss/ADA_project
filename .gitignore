@@ -1,2 +1,13 @@
+## Notebooks
 data/
-_site/data/
+src/utilities/__pycache__/health_functions.cpython-37.pyc
+src/utilities/.DS_Store
+
+
+### Jekyll
+_site/
+.sass-cache/
+Gemfile.lock
+_drafts/
+vendor/
+
