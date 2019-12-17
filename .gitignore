@@ -11,3 +11,5 @@ Gemfile.lock
 _drafts/
 vendor/
 
+.DS_Store
+.jekyll-metadata
