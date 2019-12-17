@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
   <title>
-    {% if page.title == "Home" %}
+    {% if page.title == "Presentation" %}
       {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
@@ -24,7 +24,7 @@
   {% include favicons.html %}
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" />
+  <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" /> -->
 
   {% include custom-head.html %}
 </head>

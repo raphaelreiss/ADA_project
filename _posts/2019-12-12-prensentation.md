@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Abstract
+title: Presentation
+#sidebar_link: true
 ---
 
-
-# Abstract
 
 In this project, we aim to tell a comprehensive and sometimes surprisingly detailed story regarding the identity of participants in a survey on shopping habits. We believe that despite their anonymity, we are able to acquaint ourselves with the individuals behind these transactions. Here we illustrate our process, whereby observation of subjects’ behaviour on multiple levels and analysis of sample parameters, from macro-trends all the way down to specific individual consumption patterns, enable us to gain such insight.
