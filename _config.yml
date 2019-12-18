@@ -3,10 +3,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
+title:            Household clustering
 tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-baseurl:          '/hydeout'
+description:      'Group people and products based on their intrinsec relations.'
+#baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -14,8 +14,8 @@ baseurl:          '/hydeout'
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Jerome Luscher, Yann Mentha, Daniel Pacheco Gutierrez, Raphaël Reis Nunes'
+  # url:            https://twitter.com/fongandrewc
 
 paginate:         5
 # paginate_path:    '/page:num'
@@ -25,12 +25,12 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  
+
 remote_theme: fongandrew/hydeout
 
 # Sidebar link settings
 sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+#sidebar_blog_link:  '/story'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
