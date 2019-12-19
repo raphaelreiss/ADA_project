@@ -19,21 +19,19 @@ The results show that there are groups of items often bought together, such as b
 
 We chose the optimal number of cluster by calculating the silhouette coefficient for each possible cluster number and taking the highest one.
 
-```html
-   <p align="right">The groups obtained by kmeans clustering appear to be well separated if we plot them with the 3 groups that explain most of the variance.</p>     
-```
+<img src="/assets/images_hh_groups/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:50%;float: left; margin-right: 10px;" /> 
 
-<img src="../src/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:60%;float: left; margin-right: 10px;" /> 
+
 
 The groups obtained by kmeans clustering appear to be well separated if we plot them with the 3 groups that explain most of the variance. 
 
-<img src="../src/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" style="zoom:72%;" />
+<img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" style="zoom:72%; float: right; margin-right: 10px;" />
 
 In order to get a more detailed view, we use the scatter plot matrix. We indeed see that the three first categories explain most of the variance because the groups are clearly separated along these axis. The gasoline group, in red is clearly separated from all others. This is a particularity of the shopping habbits of these households. Indeed, as it was shown before, gasoline is the highest bought item by sales value by far.
 
 Another interesting point is that the soft drinks group does not seem to have specific consumption patterns in the other groups, rather, it seems to include households from all the other groups indiscriminantely. This makes sense, as soft drinks are consumed by people from a very broad demographic and there are also many variants of soft drinks marketed towards different demographics. 
 
-<img src="../src/scatter_matrix_kmeans_labels.png" alt="Optimal_number_k_" style="zoom:72%;" />
+<img src="/assets/images_hh_groups/scatter_matrix_kmeans_labels.png" alt="Optimal_number_k_" style="zoom:72%;" />
 
 We see that even though some clusters overlap we see that clusters are representative:
 
@@ -63,7 +61,7 @@ Also, the shopping card might only be used for the weekly grocery shopping but t
 
 A more detailed analysis of the demographic composition of our cluster seems to confirm this hypothesis. Here, the demographic distributions are shown for each group to enable to get a better sense of their respective demographic compositions.
 
-<img src="../src/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" />
+<img src="/assets/images_hh_groups/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" />
 
  Indeed, even tough the products purchased by the different groups are vastly different, think of baby items versus cigarettes and wine, he most representative individual of each group has exactly the same age, income and lives in a household of the same size. It is however interesting to note that these parameters differ significantly from the US median demographic parameters.
 
@@ -106,7 +104,7 @@ A more detailed analysis of the demographic composition of our cluster seems to 
 
 Also, observing the distribution of the demographic parameters visually in the clusters do not yield explicit groups. The households appear to be randomly distributed.
 
-<img src="../src/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
+<img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
 
 To summarise, our clustering approach to discover household groups who have similar consumption patterns yielded many different groups that focus on different item categories. However, the explained variance of this approach was not very high and the groups were mainly overshadowed by the enormous gasoline consumption. One interesting aspect uncovered is that unhealthy eating habbits such as soft drinks and alcohol consumption are widespread among these household.  
 
