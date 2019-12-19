@@ -1,0 +1,116 @@
+---
+layout: category
+title: Story
+sidebar_sort_order: 1
+---
+
+
+The aim of this project is to find out *hidden* household clusters in the "The Complete Journey" dataset from Dunnhumby company.
+
+The Dunnhumby company process and analyses tonnes of data to improve data-driven businesses knowledge. However, us as group we were not intserested in market targeting but in how using such datasets for **social good**.
+
+With all that transaction-related informations and advanced web scrapping tools, we were able to build a nice prototype which associate calories and nutriments composition to most of sold food product. This technology open a new way of questioning the data to cluster household based on food/drink consumption which was not possible with the default dataset only. This way, we expected finding out meaningful difference between the poorest and richest households consumption habits, between old and young people, etc...
+
+But the dataset is far much richer than food related products. Indeed, we can find huge amount of purchases of daily life such as gasoline (oil) transactions and natality products. Thus, in a second step we enlarged our analysis to detect categories of household based on their overall purchases. We expected that people consumption would demonstrate tendencies related to healthy vs. unhealthy life styles.
+
+Finally we built a graph which.........
+
+
+
+# Data
+
+
+The data we use for this project is taken from the Dunnhumby data science company.
+Inside we find a two years long study over 2500 households who are frequent shoppers
+at a specific retailer brand. In the dataset we can also find interesting information
+about the household demographic and marketing contact history.
+
+This dataset was initially proposed for academic research to study the effect of
+direct marketing to customers. But we, as a group, were interested in repurposing
+the dataset for social good.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Graph of Commodities
+Another way of studying what people eat and buy in this study is by looking at the items that are bought together the most.
+
+Perhaps we will confirm that people are likely to buy nachos and dip, or burgers and bacon, etc.
+
+The best way to visualize the relations between items is by depicting a graph where the nodes are the items, and the edges symbolize that they are bought together often.
+
+## Implementation
+To do so, all the sales are grouped by shopping carts. Then, for all the shopping carts we looked at the number of times a pair of items appeared together.
+We then divide the frequency of the co-ocurrence by the frequency of the highest-frequency item in the pair of items. We can then create a graph by setting a threshold on the minimum
+score needed to have an edge.
+
+## Results
+Please feel free to zoom in and observe the resulting graph! It's interactive.
+{% include graph_commodities.html%}
+
+Many interesting groups appear. Most notably there is a strongly connected cluster at the center that has food items such as pasta, sugar, beef, and there are smaller clusters around it, with few
+isolated pairs in the atmosphere. Let's look at different features from this graph
+### Item Similarity
+While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings.
+* **School Supplies Group**
+![School_Supplies_Group](/assets/images_graph/student_supplies.png)
+* **Sea food Group**
+![Sea_Food_Group](/assets/images_graph/seafood_group.png)
+* **Cleaning Products Group**
+![Cleaning_Products_Group](/assets/images_graph/cleaning_products_group.png)
+
+### Recipe Discovery
+We can also find unrelated items that appear together.  
+Perhaps popular recipes contain these items:
+* Sweet Potato Dinner Rolls:
+![Sweet_potatoes](/assets/images_graph/sweet_potatoes.png)
+
+
+Perhaps cultural traditions. Let's see:
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="node: <name>...">
+<ul id="results-container"></ul>
+</div>
+
+<script>
+      simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/graph_data.json',
+        searchResultTemplate: '<li>{node}::::::{neighbors}</li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+		exclude: ['neighbors']
+      })
+    </script>
