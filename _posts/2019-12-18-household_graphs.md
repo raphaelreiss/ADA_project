@@ -3,6 +3,58 @@ layout: post
 title: Commodity Relations From Consumption Patterns
 #sidebar_link: true
 ---
-Another way of studying what people eat and buy in this study, is by looking at the frequency of items that are bought together. 
+# Graph of Commodities
+Another way of studying what people eat and buy in this study is by looking at the items that are bought together the most. 
 
-Perhaps we will confirm that people are likely to buy nachos and dip, or burgers and bacon, etc. 
+Perhaps we will confirm that people are likely to buy nachos and dip, or burgers and bacon, etc.
+
+The best way to visualize the relations between items is by depicting a graph where the nodes are the items, and the edges symbolize that they are bought together often.
+
+## Implementation
+To do so, all the sales are grouped by shopping carts. Then, for all the shopping carts we looked at the number of times a pair of items appeared together.
+We then divide the frequency of the co-ocurrence by the frequency of the highest-frequency item in the pair of items. We can then create a graph by setting a threshold on the minimum 
+score needed to have an edge. 
+
+## Results
+Please feel free to zoom in and observe the resulting graph! It's interactive.
+{% include graph_commodities.html%}
+
+Many interesting groups appear. Most notably there is a strongly connected cluster at the center that has food items such as pasta, sugar, beef, and there are smaller clusters around it, with few 
+isolated pairs in the atmosphere. Let's look at different features from this graph
+### Item Similarity
+While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings. 
+* **School Supplies Group**
+![School_Supplies_Group](/assets/images_graph/student_supplies.png)
+* **Sea food Group**
+![Sea_Food_Group](/assets/images_graph/seafood_group.png)
+* **Cleaning Products Group**
+![Cleaning_Products_Group](/assets/images_graph/cleaning_products_group.png)
+
+### Unexpected Relation Discovery
+We can also find unrelated items that appear together.  
+Perhaps popular recipes contain these items:
+* Sweet Potato Dinner Rolls:
+![Sweet_potatoes](/assets/images_graph/sweet_potatoes.png)
+* 
+Perhaps cultural traditions. Let's see:
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="node: <name>...">
+<ul id="results-container"></ul>
+</div>
+
+<script>
+      simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/graph_data.json',
+        searchResultTemplate: '<li>{node}::::::{neighbors}</li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+		exclude: ['neighbors']
+      })
+    </script>
