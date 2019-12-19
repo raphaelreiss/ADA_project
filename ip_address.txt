@@ -4,863 +4,418 @@ Configuration file: C:/Users/danie/Documents/EPFL MA/Fall 2/Applied Data Analysi
  Incremental build: disabled. Enable with --incremental
       Generating... 
        Jekyll Feed: Generating feed for posts
-                    done in 5.215 seconds.
+                    done in 6.685 seconds.
  Auto-regeneration: enabled for 'C:/Users/danie/Documents/EPFL MA/Fall 2/Applied Data Analysis/ADA_project'
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:15
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:41
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.5815073 seconds.
+                    ...done in 0.9167582 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:16
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:42
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.4959075 seconds.
+                    ...done in 0.4568713 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:17
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:43
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.5531047 seconds.
+                    ...done in 0.5005222 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:18
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:45
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.5766768 seconds.
+                    ...done in 0.4448466 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:19
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:46
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.5869974 seconds.
+                    ...done in 0.4497729 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:20
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:47
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.9938616 seconds.
+                    ...done in 0.4882226 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:21
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:48
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3592746 seconds.
+                    ...done in 0.4427287 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:23
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:49
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2692643 seconds.
+                    ...done in 0.4615902 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:24
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:49
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3895599 seconds.
+                    ...done in 0.5014826 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:26
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:50
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3422461 seconds.
+                    ...done in 0.4669722 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:27
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:52
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2361137 seconds.
+                    ...done in 0.4827359 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:28
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:53
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2561697 seconds.
+                    ...done in 0.6835083 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:30
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:54
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.518854 seconds.
+                    ...done in 0.6920217 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:31
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:55
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2431377 seconds.
+                    ...done in 0.7925519 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:33
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:56
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1836859 seconds.
+                    ...done in 0.8805916 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:34
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:57
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3215818 seconds.
+                    ...done in 0.611256 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:35
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:58
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5978682 seconds.
+                    ...done in 0.6394855 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:37
+      Regenerating: 1 file(s) changed at 2019-12-18 14:50:59
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.9250606 seconds.
+                    ...done in 0.6914079 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:38
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:00
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3164438 seconds.
+                    ...done in 0.7309366 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:39
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:01
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.2519759 seconds.
+                    ...done in 0.743277 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:41
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:02
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.3151177 seconds.
+                    ...done in 0.7489503 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:44
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:03
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.1333998 seconds.
+                    ...done in 0.7163373 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:46
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:04
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.0006487 seconds.
+                    ...done in 0.705072 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:48
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:05
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.2637233 seconds.
+                    ...done in 0.6763518 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:50
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:06
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.9684229 seconds.
+                    ...done in 0.6498398 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:53
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:07
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 3.0019572 seconds.
+                    ...done in 0.6137487 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:12:56
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:08
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 3.355317 seconds.
+                    ...done in 0.6526065 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:00
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:09
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 3.7394011 seconds.
+                    ...done in 0.5541054 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:04
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:10
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.5335349 seconds.
+                    ...done in 0.5432215 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:06
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:11
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8574072 seconds.
+                    ...done in 0.5483274 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:08
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:12
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8310019 seconds.
+                    ...done in 0.7430841 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:10
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:13
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.7199269 seconds.
+                    ...done in 0.5871493 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:12
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:14
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.7230621 seconds.
+                    ...done in 0.5541994 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:14
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:15
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8418291 seconds.
+                    ...done in 0.5550592 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:15
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:16
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.9861481 seconds.
+                    ...done in 0.5677805 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:17
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:17
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.100129 seconds.
+                    ...done in 0.5977092 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:20
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:18
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8302732 seconds.
+                    ...done in 0.6514294 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:22
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:19
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8185646 seconds.
+                    ...done in 0.6037041 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:23
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:20
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8760326 seconds.
+                    ...done in 0.5990126 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:25
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:21
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8393654 seconds.
+                    ...done in 0.5878744 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:27
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:22
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.8916415 seconds.
+                    ...done in 0.7421643 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:29
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:23
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.9634312 seconds.
+                    ...done in 0.6744166 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:31
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:24
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.6287192 seconds.
+                    ...done in 0.6295291 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:33
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:25
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5499747 seconds.
+                    ...done in 0.6129508 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:35
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:26
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.6584527 seconds.
+                    ...done in 0.6107564 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:36
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:27
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5268043 seconds.
+                    ...done in 0.6006301 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:38
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:28
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5737857 seconds.
+                    ...done in 0.6355278 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:39
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:29
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5431227 seconds.
+                    ...done in 0.5922352 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:41
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:30
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3236824 seconds.
+                    ...done in 0.6296954 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:42
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:31
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1590982 seconds.
+                    ...done in 0.6017889 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:44
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:32
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2572753 seconds.
+                    ...done in 0.5968514 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:45
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:33
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.2128752 seconds.
+                    ...done in 0.6071356 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:46
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:34
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0255893 seconds.
+                    ...done in 0.6019898 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:47
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:35
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0539959 seconds.
+                    ...done in 0.6037202 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:48
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:36
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 0.999386 seconds.
+                    ...done in 0.6085072 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:49
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:37
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0632923 seconds.
+                    ...done in 0.6506124 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:51
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:38
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0563185 seconds.
+                    ...done in 0.5948311 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:52
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:39
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0676601 seconds.
+                    ...done in 0.5907428 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:53
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:40
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0114284 seconds.
+                    ...done in 0.5952087 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:54
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:41
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1359223 seconds.
+                    ...done in 0.6025088 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:55
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:42
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0504499 seconds.
+                    ...done in 0.6002237 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:56
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:43
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0739994 seconds.
+                    ...done in 0.6059 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:57
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:44
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0089782 seconds.
+                    ...done in 0.6177455 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:58
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:45
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1252936 seconds.
+                    ...done in 0.6082277 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:13:59
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:46
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0430575 seconds.
+                    ...done in 0.6398999 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:01
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:47
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0390147 seconds.
+                    ...done in 0.760464 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:02
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:48
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1031127 seconds.
+                    ...done in 0.8137628 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:03
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:49
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3200211 seconds.
+                    ...done in 0.7462601 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:04
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:50
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.061835 seconds.
+                    ...done in 0.6892938 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:05
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:51
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0429404 seconds.
+                    ...done in 0.9047514 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:06
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:52
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.0930293 seconds.
+                    ...done in 0.8320789 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:08
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:53
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.1428847 seconds.
+                    ...done in 2.7606366 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:09
+      Regenerating: 1 file(s) changed at 2019-12-18 14:51:55
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.7364245 seconds.
+                    ...done in 4.2356711 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:12
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:00
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5012637 seconds.
+                    ...done in 2.7363059 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:13
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:02
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.3135617 seconds.
+                    ...done in 1.9466869 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:14
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:04
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.4747431 seconds.
+                    ...done in 1.4478772 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:16
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:06
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.7749612 seconds.
+                    ...done in 1.3999522 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:18
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:07
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 1.5180053 seconds.
+                    ...done in 1.1386911 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:19
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:09
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.282442 seconds.
+                    ...done in 0.9199046 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:22
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:10
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.6914245 seconds.
+                    ...done in 0.9197411 seconds.
                     
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:24
+      Regenerating: 1 file(s) changed at 2019-12-18 14:52:11
                     ip_address.txt
        Jekyll Feed: Generating feed for posts
-                    ...done in 2.8588756 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:27
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.8862197 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:30
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.9935411 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:33
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.512029 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:36
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.517123 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:38
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.8772174 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:41
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.4146118 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:44
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.2592107 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:46
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.0065148 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:48
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.4339415 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:50
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.3027488 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:51
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2791798 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:52
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2243889 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:54
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8476874 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:56
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8690986 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:58
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.4804223 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:14:59
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2927394 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:00
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.302961 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:02
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2357606 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:03
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.861053 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:05
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.2544905 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:07
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.412175 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:09
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.1298579 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:10
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.3885725 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:11
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.9683667 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:13
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.1863712 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:16
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.5121927 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:17
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.9649815 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:19
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9102831 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:20
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.5882825 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:22
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.7791347 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:24
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.5644587 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:25
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9213536 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:26
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8083266 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:27
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7186661 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:28
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7984382 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:29
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7857764 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:30
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7548661 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:31
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.698139 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:32
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7991687 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:33
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7327594 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:34
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7178576 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:35
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7702921 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:36
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7085161 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:37
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7168392 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:38
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.4887957 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:40
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8698264 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:41
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.604633 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:43
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.5321115 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:45
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9692225 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:46
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2989246 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:47
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.833795 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:49
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.9538675 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:51
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.7434247 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:53
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.4822643 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:54
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.42041 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:56
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8142413 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:58
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.6546079 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:15:59
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.5774579 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:01
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.7633614 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:03
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.2941147 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:05
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.7491614 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:07
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.6822912 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:09
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.697384 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:10
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.4427419 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:13
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.5980797 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:16
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8652473 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:17
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.9905322 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:20
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 2.8244242 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:22
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.8664628 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:24
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.1667637 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:26
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.2429015 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:27
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.7534537 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:29
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.290393 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:30
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.508245 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:32
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.1513495 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:33
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.1798914 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:34
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 1.0588812 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:35
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8683023 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:36
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9868772 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:37
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8414288 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:38
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8489108 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:39
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8456695 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:40
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8883104 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:41
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9167555 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:42
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9772702 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:43
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8778229 seconds.
-                    
-      Regenerating: 2 file(s) changed at 2019-12-18 15:16:44
-                    category/exploitation.md
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.9058185 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:45
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.8625071 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:45
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-                    ...done in 0.7792042 seconds.
-                    
-      Regenerating: 1 file(s) changed at 2019-12-18 15:16:46
-                    ip_address.txt
-       Jekyll Feed: Generating feed for posts
-Terminate batch job (Y/N)? 
-Terminate batch job (Y/N)? 
+
+### Unexpected Relation Discovery
+We can also find unrelated items that appear together.  
+Perhaps popular recipes contain these items:
+* Sweet Potato Dinner Rolls:
+![Sweet_potatoes](/assets/images_graph/sweet_potatoes.png)
+* 
+Perhaps cultural traditions. Let's see:
