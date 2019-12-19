@@ -92,7 +92,6 @@ Perhaps popular recipes contain these items:
 ![Sweet_potatoes](/assets/images_graph/sweet_potatoes.png)
 
 
-Perhaps cultural traditions. Let's see:
 
 <!-- Script pointing to jekyll-search.js -->
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
@@ -107,7 +106,7 @@ Perhaps cultural traditions. Let's see:
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '/graph_data.json',
-        searchResultTemplate: '<li>{node}::::::{neighbors}</li>',
+        searchResultTemplate: '<li>**{node}**{neighbors}</li>',
         noResultsText: 'No results found',
         limit: 10,
         fuzzy: false,
