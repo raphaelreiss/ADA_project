@@ -1,7 +1,7 @@
 ---
-layout: category
-title: Data acquisition
-sidebar_sort_order: 1
+#layout: category
+#title: Data acquisition
+#sidebar_sort_order: 1
 ---
 
 ## Data
