@@ -26,9 +26,10 @@ In addition to that, a second parser was developped in order to extract and stan
 The question is: can we trust our data at this point? Indeed, the parser does not always perform 100% accurately, and some incoherences of the dataset are present as we can see here:
 
 
-<p align="center">
+![image](/assets/images_health/banana.png)
+<!-- <p align="center">
   <img src="/assets/images_health/banana.png" alt="drawing" width="300"/>
-</p>
+</p> -->
 
 Most of the bananas items were sold by amount of 40 LB (~ 18kg). A possible hypothesis would be that the Dunnhumby supermarkets do some reselling to smaller markets.
 Nevertheless, we persisted, and analyzed the average nutrition profile of what was sold in the dunnhumby dataset by computing the mean of each nutriments weighted by the total bought mass across all transactions and articles. The result looks as follows, displayed alongst with the otimal food intakes as adviced by the National Health Service of UK as a reference and calibrating on the energy intake.
