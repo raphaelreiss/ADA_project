@@ -11,137 +11,82 @@ Finally we built a graph which.........
 
 
 
-# Data
-
-
-The data we use for this project is taken from the Dunnhumby data science company.
-Inside we find a two years long study over 2500 households who are frequent shoppers
-at a specific retailer brand. In the dataset we can also find interesting information
-about the household demographic and marketing contact history.
-
-This dataset was initially proposed for academic research to study the effect of
-direct marketing to customers. But we, as a group, were interested in repurposing
-the dataset for social good.
-
-
-
-
-########
-
-
-## Introduction
-
-The goal of this section is to group households based on what they consume the most. In order to get better insight into the households in our dataset, we decided to group them using k-means clustering. We computed the number of times each household has ever bought a specific item. Since the number of purchasable items at the stores is about 2400, it is very difficult to cluster the households based on their bought items. We need to do a dimensionality reduction on the bought items, and turn them into groups. To do so, we will create a **bag of words** analogue, which we call **bag of commodities**. Then we will do SVD, where keep 300 features. We get a **household vs. group** , and a **group vs. item** matrix describing all the groups in terms of items. We applied TF-IDF normalisation in order to reduce the importance of the articles bought frequently by almost every household.  
-
-We can then take the household vs. group matrix and find k-means clusters.  
-
-Finally we can find if there is any relation between these clusters and the demographic data.  
-The results show that there are groups of items often bought together, such as baby items or wine and cigarettes. However, the groups that overshadowed all others was the gasoline group, as it is the most bought item overall by far.
-
-## Kmeans
-
-We chose the optimal number of cluster by calculating the silhouette coefficient for each possible cluster number and taking the highest one.
-
-<img src="/assets/images_hh_groups/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:50%;float: left; margin-right: 10px;" />
-
-
-
-The groups obtained by kmeans clustering appear to be well separated if we plot them with the 3 groups that explain most of the variance.
-
-<img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" style="zoom:72%; float: right; margin-right: 10px;" />
-
-In order to get a more detailed view, we use the scatter plot matrix. We indeed see that the three first categories explain most of the variance because the groups are clearly separated along these axis. The gasoline group, in red is clearly separated from all others. This is a particularity of the shopping habbits of these households. Indeed, as it was shown before, gasoline is the highest bought item by sales value by far.
-
-Another interesting point is that the soft drinks group does not seem to have specific consumption patterns in the other groups, rather, it seems to include households from all the other groups indiscriminantely. This makes sense, as soft drinks are consumed by people from a very broad demographic and there are also many variants of soft drinks marketed towards different demographics.
-
-<img src="/assets/images_hh_groups/scatter_matrix_kmeans_labels.png" alt="Optimal_number_k_" style="zoom:72%;" />
-
-We see that even though some clusters overlap we see that clusters are representative:
-
-* Red: Gasoline group: gasoline consumption clearly higher than all other groups, But there is significant separation with the late night snacks group, which indicates that people who come to buy gasoline often also get food. Some overlapp with cigs & liquors and baby items.
-
-* Blue: Late night snacks: Also buy gasoline but barely anything else, also some overlap with soft drinks and baby items
-
-* Green: Cigs & liquor: medium snacks and high gasoline
-
-* Yellow: Baby items: also consume snacks, medium consumption of cigarettes and liquor!
-
-* Magenta: Dinner: Clearly stands out for high gasoline, cigarettes and liquor consumption
-
-* Cyan: Soft drinks: Very diffuse/ sparse group, Indicates that the households in this group have a very varied consumption of items in other groups. Suggests that soft drinks appeal to a very large demographic group
-
-
-
-From the distributions we see that the gasoline group is strongly skewed to the right, approximately follows a heavy tailed distribution and all the values are positive, which means that all the households consume from this group. Liquor and cigarettes and Late night snacks have similar distributions skewed to the left, meaning that most people do not buy from these groups.
-
-Another reason why there are not more specific individual patterns emerging from this analysis is that all our transaction data is at the household level and the composition of a household can be very heterogeneous, so we would almost certainly find other more granular consumption patterns with individual transaction data.
-
-Also, the shopping card might only be used for the weekly grocery shopping but the individual members of a household might go to the store for smaller transactions without using the card, as it may remain with a single person.
-
-## Demographics
-
-
-
-A more detailed analysis of the demographic composition of our cluster seems to confirm this hypothesis. Here, the demographic distributions are shown for each group to enable to get a better sense of their respective demographic compositions.
-
-<img src="/assets/images_hh_groups/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" />
-
- Indeed, even tough the products purchased by the different groups are vastly different, think of baby items versus cigarettes and wine, he most representative individual of each group has exactly the same age, income and lives in a household of the same size. It is however interesting to note that these parameters differ significantly from the US median demographic parameters.
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>age</th>
-      <th>income</th>
-      <th>household size</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Gasoline</td>
-      <td>45-54</td>
-      <td>50-74K</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Late snacks</td>
-      <td>45-54</td>
-      <td>35-49K</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Cigs &amp; liquor</td>
-      <td>45-54</td>
-      <td>50-74K</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>US population</td>
-      <td>38.2</td>
-      <td>32K</td>
-      <td>2.6</td>
-    </tr>
-  </tbody>
-</table>
-
-Also, observing the distribution of the demographic parameters visually in the clusters do not yield explicit groups. The households appear to be randomly distributed.
-
-<img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
-
-To summarise, our clustering approach to discover household groups who have similar consumption patterns yielded many different groups that focus on different item categories. However, the explained variance of this approach was not very high and the groups were mainly overshadowed by the enormous gasoline consumption. One interesting aspect uncovered is that unhealthy eating habbits such as soft drinks and alcohol consumption are widespread among these household.  
-
-In the next part, we will take a closer look at food consumption among different population subgroups.
 
 
 
 
 
+# Health and Nutrition
+As we saw previously, the food represents a major part of our dataset: an in-depth analysis of this section seemed thus natural to us. Unfortunately, no nutrition values were available in the dataset. We solved this issue by using another dataset coming from the U.S. Department of Agriculture (USDA) which gave us access to a great variety of food products alongst with their respective nutritional values. The challenge consisted mainly in the difference between the article names of the two dataset: for instance, classical onions are called ONIONS SWEET (BULK&BAG) in the dunnhumby dataset, whereas  "Onion, mature raw" in the USDA dataset.
+
+We therefore developped a parser which analyzes the name of the articles present in the dunnhumby dataset and associates them with the most similar USDA articles according to a tailored recursive algorithm.
+
+In addition to that, a second parser was developped in order to extract and standardize the heterogeneous types of weight/volume units for each article.
+
+## An incredible soup
+The question is: can we trust our data at this point? Indeed, the parser does not always perform 100% accurately, and some incoherences of the dataset are present as we can see here:
 
 
+<p align="center">
+  <img src="/assets/images_health/banana.png" alt="drawing" width="300"/>
+</p>
+
+Most of the bananas items were sold by amount of 40 LB (~ 18kg). A possible hypothesis would be that the Dunnhumby supermarkets do some reselling to smaller markets.
+Nevertheless, we persisted, and analyzed the average nutrition profile of what was sold in the dunnhumby dataset by computing the mean of each nutriments weighted by the total bought mass across all transactions and articles. The result looks as follows, displayed alongst with the otimal food intakes as adviced by the National Health Service of UK as a reference and calibrating on the energy intake.
+<p align="center">
+  <img src="/assets/images_health/soup.png" alt="drawing" width="300"/>
+</p>
+
+As we can see, the data looks coherent: for a same intake of energy, the "average soup" does not fall apart of the optimal values.
+## A mass of food
+First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
+
+<iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe>
+
+We notice a few things: the eggs and the meat are significantly richer than the other articles in terms of cholesterol while canola and soybean oils look way richer for polyunsaturated fat.
+
+The idea consists now to identify which articles are the most responsible for the mass consumption of a given nutrient: i.e. to find the items which bring the biggest mass of a given nutrient in people's plates.
 
 
+<iframe width="100%" height="650" src="/assets/images_health/nutrient_responsability.html" /></iframe>
 
+Interestingly, despite the fact that milk contains about 30 times less cholesterol than egg, it ends up being the main source of cholesterol for people due to its massive mass consumption. Overall, dairy and meat represent the main sources.
+
+Concerning energy, basic items as potatoes, sugars and margarine are responsible.
+
+
+## What people eat
+Taking advantage of the rest of the datas, we analyzed the nutritional values by separating classes of customers according to various features. One noticeable trend is represented by the fat consumption which tends to  decrease with the income. To compute theses datas, the households were distributed in 2 classes, low and high income. An indicative p-value of t-test is displayed with the graph: however for the test to be statistically significant, the data should be tested for equal variance, normality and random sampling.
+
+![image](/assets/images_health/cholesterol_pvalue.png)
+![image](/assets/images_health/fatty_acids_total_monounsaturated_pvalue.png)
+![image](/assets/images_health/fatty_acids_total_polyunsaturated_pvalue.png)
+![image](/assets/images_health/total_lipid_pvalue.png)
+![image](/assets/images_health/cholesterol_pvalue.png)
+
+This goes along with the lowering of energy costs through technological innovation as described in the "Fat and Sugar: An Economic Analysis" ################TODO ADD CITATION######### and confirms that our parser system performs well overall.
+
+## Average nutriment consumption
+A mandatory step consists in defining which type of nutriments are consumed together: this was achieved by computing the correlation matrix of the average nutrients consumption per household between all nutrients (first matrix). However, food items present a natural correlation across nutrients, as different types of fats are usually present together in a given product. In order to counteract this trend, we subtracted the second matrix to the first one in order to identify correlations which are not explained by the natural presence in items, but because people tend to consume them together.
+
+<img src="/assets/images_health/consumption_nutriments_correlation.png" alt="drawing" width="1500"/>
+
+First, we observe that nutrients which are correlated across food items are correlated in average people consumption as well: this goes along with the fact that people can't "separate" the nutrient once an item is bought. Amongst these natural correlations, note the ones between all type of fat.
+
+Then, let's take a look at the correlations that are not explained by items only: the most important one concern protein, cholesterol, sodium, vitamin b-12 and vitamin k. A quick look at the dataset (or a google search) shows that vitamin b-12 is mainly present in meat: this hypothesis goes along with an alimentation mainly based on cheap factorized items and high meat consumption of the occidental diet as described in ######TODO PAPER#######
+
+Our dataset thus definitely present symptoms of malnutrtion at some scale.
+
+
+## Households Detection
+We just saw that with a few data at first look innocent, we can gain suprising insight into people's life using a few data-analysis tools and a bit of time. Does that mean that one should systematically refuse to share his/her data? We think personally answer negatively, as we will see in this section that data science can be used for good as well.
+We indeed developped a basic tool where we detect the outliers householdsfor which the average food consumption is abnormal for a specific nutrient using the interquantile-range method: the households are then projected on the 2 first principal components computed on their average nutrition values for sake of visualization. 
+
+<iframe width="100%" height="650" src="/assets/images_health/Outliers_detection.html" /></iframe>
+
+As we 
+
+ This type of method could allow the supermarket (and any middle-range to big-scale company) detecting potential alimentation issues early enough in the life of their customers, and use this type of data to improve and sensitize people to eat in a more healthy manner. This is an example
 
 
 
