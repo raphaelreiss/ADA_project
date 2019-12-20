@@ -23,3 +23,6 @@ src/.DS_Store
 .sass-cache/2a6973c2bbf114983a0a3d415aa282b97a072a6a/_variables.scssc
 .sass-cache/d3dd27b641c87357a2fcfb6a45c4f159fb0a6993/hydeout.scssc
 .jekyll-metadata
+src/.ipynb_checkpoints/Household Groups-checkpoint.ipynb
+src/utilities/__pycache__/weight_functions.cpython-37.pyc
+src/.ipynb_checkpoints/Alcohol outliers-checkpoint.ipynb
