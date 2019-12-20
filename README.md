@@ -4,6 +4,21 @@ File to correct: **TermProject.ipynb**
 
 The whole data story was deployed and is accessible [here](https://raphaelreis.github.io/ADA_project/#/)
 
+
+!!Since we had troubles with github-pages that did not want to show the plotly figures, we must ask you two do some manipulation!!:
+
+We basically used docsify to run the website:
+
+
+```bash
+sudo npm i docsify-cli -g
+cd docs/
+docsify serve
+```
+
+
+
+
 ## Abstract
 
 In this project, we aim to tell a comprehensive and sometimes surprisingly detailed story regarding the identity of participants in a survey on shopping habits. We believe that despite their anonymity, we are able to acquaint ourselves with the individuals behind these transactions. Here we illustrate our process, whereby observation of subjects’ behaviour on multiple levels and analysis of sample parameters, from macro-trends all the way down to specific individual consumption patterns, enable us to gain such insight.
