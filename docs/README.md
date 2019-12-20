@@ -290,3 +290,6 @@ It is interesting to see that the most popular items, such as milk or bananas ar
 The reason for this is that the most connected items in the graph correspond to the items that relative to their abundance, appear always together with the same items.
 Therefore, it is understandable why unhealthy items are probably always bought by the same households.
 This corroborates the finding that in the present dataset that fatty and salty items are consumed together.
+
+# Conclusion
+We indeed saw through the nutriton project that data analysis could be used for good, if handled properly. On another hand, consumers should really be aware of the personnal data gathered on their behalf, and know what type of products big companies developp based on these precious values. We hope that this project helped you  to understand that.
