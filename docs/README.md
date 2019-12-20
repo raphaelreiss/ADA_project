@@ -43,6 +43,7 @@ As we can see, the data looks coherent: for a same intake of energy, the "averag
 ## A mass of food
 First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
 
+![filename2](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px')
 <!-- ![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px') -->
 <!-- <iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe> -->
 
@@ -138,11 +139,11 @@ The results show that there are groups of items often bought together, such as b
 
 
 
-<p align="center">
+<!-- <p align="center">
   <img src="/assets/images_hh_groups/scatter_matrix_kmeans_labels.png" alt="draw" width="600">
-</p>
+</p> -->
 
-
+![image](/assets/images_hh_groups/scatter_matrix_kmeans_labels.png)
 
 
 | Color         |  Group                  |
@@ -183,7 +184,8 @@ Also, the shopping card might only be used for the weekly grocery shopping but t
 
 A more detailed analysis of the demographic composition of our cluster seems to confirm this hypothesis. Here, the demographic distributions are shown for each group to enable to get a better sense of their respective demographic compositions.
 
-<img src="/assets/images_hh_groups/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" />
+![image](/assets/images_hh_groups/demo_distr_dummy.png)
+<!-- <img src="/assets/images_hh_groups/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" /> -->
 
  Indeed, even tough the products purchased by the different groups are vastly different, think of baby items versus cigarettes and wine, he most representative individual of each group has exactly the same age, income and lives in a household of the same size. It is however interesting to note that these parameters differ significantly from the US median demographic parameters.
 
@@ -201,7 +203,7 @@ Also, observing the distribution of the demographic parameters visually in the c
 
 ![image](/assets/images_hh_groups/demographic_grps_dummy.png)
 
-<img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
+<!-- <img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" /> -->
 
 To summarise, our clustering approach to discover household groups who have similar consumption patterns yielded many different groups that focus on different item categories. However, the explained variance of this approach was not very high and the groups were mainly overshadowed by the enormous gasoline consumption. One interesting aspect uncovered is that unhealthy eating habbits such as soft drinks and alcohol consumption are widespread among these household.  
 
