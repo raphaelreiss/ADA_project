@@ -44,7 +44,7 @@ As we can see, the data looks coherent: for a same intake of energy, the "averag
 First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
 
 <!-- ![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px') -->
-<iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe>
+<!-- <iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe> -->
 
 We notice a few things: the eggs and the meat are significantly richer than the other articles in terms of cholesterol while canola and soybean oils look way richer for polyunsaturated fat.
 
@@ -72,7 +72,8 @@ This goes along with the lowering of energy costs through technological innovati
 ## Average nutriment consumption
 A mandatory step consists in defining which type of nutriments are consumed together: this was achieved by computing the correlation matrix of the average nutrients consumption per household between all nutrients (first matrix). However, food items present a natural correlation across nutrients, as different types of fats are usually present together in a given product. In order to counteract this trend, we subtracted the second matrix to the first one in order to identify correlations which are not explained by the natural presence in items, but because people tend to consume them together.
 
-<img src="/assets/images_health/consumption_nutriments_correlation.png" alt="drawing" width="1500"/>
+![image](/assets/images_health/consumption_nutriments_correlation.png)
+<!-- <img src="/assets/images_health/consumption_nutriments_correlation.png" alt="drawing" width="1500"/> -->
 
 First, we observe that nutrients which are correlated across food items are correlated in average people consumption as well: this goes along with the fact that people can't "separate" the nutrient once an item is bought. Amongst these natural correlations, note the ones between all type of fat.
 
@@ -130,7 +131,7 @@ The results show that there are groups of items often bought together, such as b
 
 <!-- <img src="/assets/images_hh_groups/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:50%;float: left; margin-right: 10px;" /> -->
 
-
+![image](/assets/images_hh_groups/3d_scatter_plot_of_groups.png)
 <img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" width="700" class="center">
 
 
