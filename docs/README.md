@@ -199,6 +199,8 @@ A more detailed analysis of the demographic composition of our cluster seems to 
 
 Also, observing the distribution of the demographic parameters visually in the clusters do not yield explicit groups. The households appear to be randomly distributed.
 
+![image](/assets/images_hh_groups/demographic_grps_dummy.png)
+
 <img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
 
 To summarise, our clustering approach to discover household groups who have similar consumption patterns yielded many different groups that focus on different item categories. However, the explained variance of this approach was not very high and the groups were mainly overshadowed by the enormous gasoline consumption. One interesting aspect uncovered is that unhealthy eating habbits such as soft drinks and alcohol consumption are widespread among these household.  
@@ -256,27 +258,38 @@ isolated pairs orbitating in the atmosphere. Let's look at different features fr
 ### Item Similarity
 While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings.
 * **Sea food Group**
- <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="500"/>
+![image](/assets/images_graph/seafood_groups.png)
+
+ <!-- <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="500"/> -->
 
 
 * **Cleaning Products Group**
- <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="300"/>
+![image](/assets/images_graph/cleaning_groups.png)
+
+ <!-- <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="300"/> -->
 
 
 * **Gasoline Group**
- <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="500"/>
+![image](/assets/images_graph/gasoline_group.PNG)
+
+ <!-- <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="500"/> -->
 
 But there's many many more groups. Can you find some more?
 ### Recipe Discovery
 Sometimes unrelated products are observed, but after googling, we realize these correspond to recipes:
 * **Sweet Potato Dinner Rolls**
- <img src="/assets/images_graph/sweet_potato_v2.PNG" alt="Sweet_potatoes" width="400"/>
+![image](/assets/images_graph/sweet_potato_v2.PNG.PNG)
+
+ <!-- <img src="/assets/images_graph/sweet_potato_v2.PNG" alt="Sweet_potatoes" width="400"/> -->
 
 * **Mushroom Gravy**
- <img src="/assets/images_graph/mushroom_gravy_combo.PNG" alt="Mushroom_Gravy" height="400"/>
+![image](/assets/images_graph/mushroom_gravy_combo.PNG)
+
+ <!-- <img src="/assets/images_graph/mushroom_gravy_combo.PNG" alt="Mushroom_Gravy" height="400"/> -->
 
 * **Pina Colada**
-<img src="/assets/images_graph/pina_colada.PNG" alt="Pina_Colada" width="400"/>
+![image](/assets/images_graph/pina_colada.PNG)
+<!-- <img src="/assets/images_graph/pina_colada.PNG" alt="Pina_Colada" width="400"/> -->
 
 ## Item Importance
 We can rank items based on how connected they are. The following figure shows the degree distribution of the graph:
