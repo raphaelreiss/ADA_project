@@ -10,9 +10,7 @@ def create_single_weights(df,unit):
     if unit == 'space':
         temp = df[df.CURR_SIZE_OF_PRODUCT == ' '][['COMMODITY_DESC','SUB_COMMODITY_DESC','CURR_SIZE_OF_PRODUCT']].copy()
     else:
-        temp = df[df.CURR_SIZE_OF_PRODUCT.str.contains(unit)][['COMMODITY_DESC','SUB_COMMODITY_DESC','CURR_SIZE_OF_PRODUCT']].copy()
-    temp['desc'] = temp.COMMODITY_DESC + temp.SUB_COMMODITY_DESC
-    temp.drop(columns = ['COMMODITY_DESC','SUB_COMMODITY_DESC'],inplace = True)
+        temp = df[df.CURR_SIZE_OF_PRODUCT.str.contains(unit)][['dunn_name','CURR_SIZE_OF_PRODUCT']].copy()
     temp.rename(columns = {'CURR_SIZE_OF_PRODUCT':'single_weight'},inplace = True)
     temp['single_weight'] = 1
     
@@ -30,14 +28,14 @@ def create_single_weights(df,unit):
                 print("Not a number")
         single_weights_df[index] = q
     print('Operation terminated!')
-    with open('../results/'+ unit +'_articles.pickle', 'wb') as file:
+    with open('../saved_data/'+ unit +'_articles.pickle', 'wb') as file:
         pickle.dump(single_weights_df, file, protocol=pickle.HIGHEST_PROTOCOL)
     return single_weights_df
 
 
 def start_create_single_weights(string,df):
     try:
-        with open('../results/'+ string +'_articles.pickle', 'rb') as file:
+        with open('../saved_data/'+ string +'_articles.pickle', 'rb') as file:
             single_weights = pickle.load(file)
             print('Successful read.')
     except IOError:
