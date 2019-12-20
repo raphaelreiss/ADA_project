@@ -132,7 +132,7 @@ The results show that there are groups of items often bought together, such as b
 <!-- <img src="/assets/images_hh_groups/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:50%;float: left; margin-right: 10px;" /> -->
 
 ![image](/assets/images_hh_groups/3d_scatter_plot_of_groups.png)
-<img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" width="700" class="center">
+<!-- <img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" width="700" class="center"> -->
 
 
 
@@ -286,28 +286,12 @@ We see that while most items have only one neighbor, there is a group of items w
 
 The following figure shows what these most connected components are on the top plot,
 and these are compared with the most popular items on the bottom plot:
-<img src="/assets/images_graph/degree_freq_distribution.png" alt="top degree" width="400"/>
+
+![image](/assets/images_graph/degree_freq_distribution.png)
+<!-- <img src="/assets/images_graph/degree_freq_distribution.png" alt="top degree" width="400"/> -->
 
 We see that the most of the connected items are not very healthy items such as snacks and canned foods.
 It is interesting to see that the most popular items, such as milk or bananas are not the most connected items in the graph.
 The reason for this is that the most connected items in the graph correspond to the items that relative to their abundance, appear always together with the same items.
 Therefore, it is understandable why unhealthy items are probably always bought by the same households.
 This corroborates the finding that in the present dataset that fatty and salty items are consumed together.
-
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
-
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="<name>...">
-    <ul id="results-container"></ul>
-</div>
-<script>
-    simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/graph_data.json',
-        searchResultTemplate: '<li><a {node}::::::{neighbors}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
-
-    })
-</script>
