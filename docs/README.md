@@ -43,7 +43,7 @@ As we can see, the data looks coherent: for a same intake of energy, the "averag
 ## A mass of food
 First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
 
-![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px')
+<!-- ![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px') -->
 <iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe>
 
 We notice a few things: the eggs and the meat are significantly richer than the other articles in terms of cholesterol while canola and soybean oils look way richer for polyunsaturated fat.
