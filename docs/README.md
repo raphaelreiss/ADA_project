@@ -2,14 +2,12 @@
 With the increasing space that Information Technologies took in individual daily life, it became soon clear to the governments that
 protecting people's numeric life was essential for social cohesion. In this perspective, the European Union adopted in 1995 the [Data Protection Directive](https://en.wikipedia.org/wiki/Data_Protection_Directive) in order to regulate how personal data was processed. This text states that personal data should not be processed at all, except, for instance, if the data subject has given his consent. However, the generalisation of massive personal data collection from credit cards, promotion cards, social medias, etc... made this directive soon outdated. To face privacy issues that the previous directive did not address properly, a new concept was more and more discussed to the European parliament regarding the [Right to be forgotten]("https://en.wikipedia.org/wiki/Right_to_be_forgotten"). This right states that the development of autonomous individual's life must not be *perpetually* dependent of the actions performed in the the past. This right has been formalised in the [General Data Protection Regulation]("https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679").
 
-In this project we aimed at illustrate the importance of such laws in our interconnected world tackling the following question: **What kind of information a *harmless data collection* can bring to a data scientist ?** In the following work, we don't take into account any moral aspect. By this, we are saying what is possible to know and not if it is moral or not to do so.  
+In this project we aimed at illustrate the importance of such laws in our interconnected world tackling the following question: **What kind of information a *harmless data collection* can bring to a data scientist ?** In the following work, we don't take into account any moral aspect. By this, we are showing what is possible to know and not if it is moral or not to do so.
+
+To achieve such a task we used "The Complete Journey" dataset from Dunnhumby which is a company that  process and analyses tonnes of data to improve data-driven business knowledge. This dataset is the result of a two year long study aiming at measuring marketing effects over customers. However, we repurposed the marketing initial goal of this study into valuable information for general interest.
 
 
 
-
-The aim of this project is to find out *hidden* household clusters in the "The Complete Journey" dataset from Dunnhumby company.
-
-The Dunnhumby company process and analyses tonnes of data to improve data-driven businesses knowledge. However, us as group we were not intserested in market targeting but in how using such datasets for **social good**.
 
 With all that transaction-related informations and advanced web scrapping tools, we were able to build a nice prototype which associate calories and nutriments composition to most of sold food product. This technology open a new way of questioning the data to cluster household based on food/drink consumption which was not possible with the default dataset only. This way, we expected finding out meaningful difference between the poorest and richest households consumption habits, between old and young people, etc...
 
