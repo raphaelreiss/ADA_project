@@ -33,14 +33,17 @@ The question is: can we trust our data at this point? Indeed, the parser does no
 
 Most of the bananas items were sold by amount of 40 LB (~ 18kg). A possible hypothesis would be that the Dunnhumby supermarkets do some reselling to smaller markets.
 Nevertheless, we persisted, and analyzed the average nutrition profile of what was sold in the dunnhumby dataset by computing the mean of each nutriments weighted by the total bought mass across all transactions and articles. The result looks as follows, displayed alongst with the otimal food intakes as adviced by the National Health Service of UK as a reference and calibrating on the energy intake.
-<p align="center">
+<!-- <p align="center">
   <img src="/assets/images_health/soup.png" alt="drawing" width="300"/>
-</p>
+</p> -->
+
+![image](/assets/images_health/soup.png)
 
 As we can see, the data looks coherent: for a same intake of energy, the "average soup" does not fall apart of the optimal values.
 ## A mass of food
 First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
 
+![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px')
 <iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe>
 
 We notice a few things: the eggs and the meat are significantly richer than the other articles in terms of cholesterol while canola and soybean oils look way richer for polyunsaturated fat.
