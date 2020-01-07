@@ -3,20 +3,19 @@
 With the increasing space that Information Technologies took in individual daily life, it became soon clear to the governments that
 protecting people's numeric life was essential for social cohesion. In this perspective, the European Union adopted in 1995 the [Data Protection Directive](https://en.wikipedia.org/wiki/Data_Protection_Directive) in order to regulate how personal data was processed. This text states that personal data should not be processed at all, except, for instance, if the data subject has given his consent. However, the generalisation of massive personal data collection from credit cards, promotion cards, social medias, etc... made this directive soon outdated. To face privacy issues that the previous directive did not address properly, a new concept was more and more discussed to the European parliament regarding the [Right to be forgotten]("https://en.wikipedia.org/wiki/Right_to_be_forgotten"). This right states that the development of autonomous individual's life must not be *perpetually* dependent of the actions performed in the the past. This right has been formalised in the [General Data Protection Regulation]("https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679") and is applied since the 25th of May 2019.
 
-In this project we aimed at illustrate the importance of such laws in our interconnected world tackling the following question: **What kind of information a harmless data collection can bring to a data scientist ?**
 
-To try answering this question we used "The Complete Journey" dataset from Dunnhumby which is a company that process and analyses tonnes of data to improve data-driven business knowledge. This dataset is the result of a two year long study over 2500 households aiming at measuring marketing effects over customers. In the objective to bring valuable information for the general interest, we repurposed the marketing initial goal of this study.
+In this project we aim at giving an **educational and interactive example able to explain to anyone the reasons why he/she should or should not share his/her data.** More specifically, it aims at showing **what kind of information an apparently harmless data collection can bring to a data scientist.**
 
-Finally, we would like to emphasise on the fact that all the information we will deliver here is under anonymity constraints imposed by the dataset keeper. Indeed, it as been tremendously de-identified in such a way that for external users as we are, it is impossible to directly reach the households. However the whole problematic resides in the fact that the data owner can link the human being behind the insights we provide. And thus, getting more informations from your transaction than what you would expect. Plus, we don't take into account any moral aspect. By this, we are showing what is possible to know and we are trying to not force any opinion on it.
+To try answering this question we used "The Complete Journey" dataset from Dunnhumby which is a company that process and analyses tonnes of data mainly to improve data-driven business knowledge. This dataset is the result of a two year long study over 2500 households aiming at measuring marketing effects over customers. In the objective to bring valuable information for the general interest, we repurposed the marketing initial goal of this study.
 
+Finally, we would like to emphasize the fact that all the information we will deliver here is anonym due to the relatively personal nature of the dataset.
 
 
 # Exploitation
 
 
-
 # Health and Nutrition
-As we saw previously, the food represents a major part of our dataset: an in-depth analysis of this section seemed thus natural to us. Unfortunately, no nutrition values were available in the dataset. We solved this issue by using another dataset coming from the U.S. Department of Agriculture (USDA) which gave us access to a great variety of food products alongst with their respective nutritional values. The challenge consisted mainly in the difference between the article names of the two dataset: for instance, classical onions are called ONIONS SWEET (BULK&BAG) in the dunnhumby dataset, whereas  "Onion, mature raw" in the USDA dataset.
+After a quick look of the data, we saw that the food represented the major part of our entries: an in-depth and exclusive analysis of this section seemed thus necessary to us. Unfortunately, no nutrition values were available in the dataset. We solved this issue by using another dataset coming from the [U.S. Department of Agriculture (USDA)](https://fdc.nal.usda.gov/)  which gave us access to a great variety of food products along with their respective nutritional values. The challenge consisted mainly associating the similar articles of the two datasets based on their name exclusively: for instance, classical onions are called ONIONS SWEET (BULK&BAG) in the dunnhumby dataset, whereas  "Onion, mature raw" in the USDA dataset.
 
 We therefore developped a parser which analyzes the name of the articles present in the dunnhumby dataset and associates them with the most similar USDA articles according to a tailored recursive algorithm.
 
@@ -32,7 +31,7 @@ The question is: can we trust our data at this point? Indeed, the parser does no
 </p> -->
 
 Most of the bananas items were sold by amount of 40 LB (~ 18kg). A possible hypothesis would be that the Dunnhumby supermarkets do some reselling to smaller markets.
-Nevertheless, we persisted, and analyzed the average nutrition profile of what was sold in the dunnhumby dataset by computing the mean of each nutriments weighted by the total bought mass across all transactions and articles. The result looks as follows, displayed alongst with the otimal food intakes as adviced by the National Health Service of UK as a reference and calibrating on the energy intake.
+Nevertheless, we persisted, and analyzed the average nutrition profile of what was sold in the dunnhumby dataset by computing the mean of each nutriments weighted by the total bought mass across all transactions and articles. The result looks as follows, displayed alongst with the otimal food intakes as adviced by the [National Health Service of UK](https://www.nhs.uk/) as a reference and calibrating on the energy intake.
 <!-- <p align="center">
   <img src="/assets/images_health/soup.png" alt="drawing" width="300"/>
 </p> -->
@@ -59,7 +58,7 @@ Concerning energy, basic items as potatoes, sugars and margarine are responsible
 
 
 ## What people eat
-Taking advantage of the rest of the datas, we analyzed the nutritional values by separating classes of customers according to various features. One noticeable trend is represented by the fat consumption which tends to  decrease with the income. To compute theses datas, the households were distributed in 2 classes, low and high income. An indicative p-value of t-test is displayed with the graph: however for the test to be statistically significant, the data should be tested for equal variance, normality and random sampling.
+Taking advantage of the rest of the datas, we analyzed the nutritional values by separating classes of customers according to various features. One noticeable trend is represented by the fat consumption which tends to  decrease with the income. To compute theses datas, the households were distributed in 2 classes, low and high income by separating the housholds according to their median. An indicative p-value of t-test is displayed with the graph: however for the test to be statistically significant, the data should be tested for equal variance, normality and random sampling.
 
 ![image](/assets/images_health/cholesterol_pvalue.png)
 ![image](/assets/images_health/fatty_acids_total_monounsaturated_pvalue.png)
@@ -67,7 +66,7 @@ Taking advantage of the rest of the datas, we analyzed the nutritional values by
 ![image](/assets/images_health/total_lipid_pvalue.png)
 ![image](/assets/images_health/cholesterol_pvalue.png)
 
-This goes along with the lowering of energy costs through technological innovation as described in the "Fat and Sugar: An Economic Analysis" ################TODO ADD CITATION######### and confirms that our parser system performs well overall.
+This goes along with the lowering of energy costs through technological innovation as described in the ["Fat and Sugar: An Economic Analysis"(Drewnowski A.) 2003](https://www.ncbi.nlm.nih.gov/pubmed/12612164) and confirms that our parser system performs well overall: all the fat-related nutriments seem to change significantly between the 2 classes.
 
 ## Average nutriment consumption
 A mandatory step consists in defining which type of nutriments are consumed together: this was achieved by computing the correlation matrix of the average nutrients consumption per household between all nutrients (first matrix). However, food items present a natural correlation across nutrients, as different types of fats are usually present together in a given product. In order to counteract this trend, we subtracted the second matrix to the first one in order to identify correlations which are not explained by the natural presence in items, but because people tend to consume them together.
@@ -76,7 +75,7 @@ A mandatory step consists in defining which type of nutriments are consumed toge
 
 First, we observe that nutrients which are correlated across food items are correlated in average people consumption as well: this goes along with the fact that people can't "separate" the nutrient once an item is bought. Amongst these natural correlations, note the ones between all type of fat.
 
-Then, let's take a look at the correlations that are not explained by items only: the most important one concern protein, cholesterol, sodium, vitamin b-12 and vitamin k. A quick look at the dataset (or a google search) shows that vitamin b-12 is mainly present in meat: this hypothesis goes along with an alimentation mainly based on cheap factorized items and high meat consumption of the occidental diet as described in ######TODO PAPER#######
+Then, let's take a look at the correlations that are not explained by items only: the most important one concern protein, cholesterol, sodium, vitamin b-12 and vitamin k. A quick look at the dataset (or a google search) shows that vitamin b-12 is mainly present in meat: this hypothesis goes along with an alimentation mainly based on cheap factorized items and high meat consumption of the occidental diet as described in [Processed red meat contribution to dietary patterns and the associated cardio-metabolic outcomes.Lenighan YM1, Nugent AP2, Li KF2, Brennan L2, Walton J3, Flynn A3, Roche HM1, McNulty BA2. 2017](https://www.ncbi.nlm.nih.gov/pubmed/28831958)
 
 Our dataset thus definitely present symptoms of malnutrtion at some scale.
 
@@ -100,30 +99,29 @@ However, the story does not stop here: we adopted a food exclusive point of view
 
 
 
-#### Jérôme
+# Clustering households
 
 
 
 
 
-The first question that came to our mind was trivially if it was possible to group households based on what they consume the most. Since the number of purchasable items from the store is high (~2400) we needed to perform dimensionality reduction to turn them into groups. So we performed basic clustering algorithms computing the total sales items per household.
-
-
+The second question that came to our mind was trivially if it was possible to group households based on what they consume the most. Since the number of purchasable items from the store is high (~2400) we needed to perform dimensionality reduction to turn them into groups. So we performed basic clustering algorithms computing the total sales items per household.
 
 
 
 >## Dimensionality reduction
-**Technical:** we created a "bag-of-words" analogue and performed a single-value-decomposition keeping only 300 abstract features. This created household vs. group and a group vs. item matrices. We also used TF-IDF normalisation to reduce the importance of the articles bought frequently by every household.
+*Technical:* we created a "bag-of-words" analogue and performed a single-value-decomposition keeping only 300 abstract features. This created household vs. group and a group vs. item matrices. We also used TF-IDF normalisation to reduce the importance of the articles bought frequently by every household.
 
 
-After performing dimensionality reduction, we observed groups of purchased items, and we tried to label them with keywords representing these items. Now households can be compared amongst these groups instead of a huge list of items. From groups we chose the most meaningful ones which were used to cluster households.
+After performing dimensionality reduction, we observed groups of purchased items, and we tried to label them with keywords representing these items.
+The chosen items are as follows. The following list shows the label, together with the items of top score.
+* Gasoline: GASOLINE-REG UNLEADED (0.97)	BEERALEMALT (0.15), soft drinks (0.05) We can see this group contains a high score in gasoline compared to the next groups
+* Liquor and Cigarettes: BEERALEMALT LIQUORS	CIGARETTES	AUSTRALIAN/NZ WINES
+* Baby items: BABY DIAPERS(0.95)	INFANT FORMULA MILK BASE (0.40)	BEERALEMALT LIQUORS(0.05)
+* Premium Items: FRZN SS PREMIUM ENTREES/DNRS/N (0.8)	CIGARETTES (0.15)	YOGURT NOT MULTI-PACKS (0.05)
+* Soft Drinks: SOFT DRINKS 12/18&15PK CAN CAR(0.3)	SOFT DRINKS 20PK&24PK CAN CARB (0.2)	FRZN SS PREMIUM ENTREES/DNRS/N(0.1)
 
-<!-- The goal of this section is to group households based on what they consume the most. In order to get better insight into the households in our dataset, we decided to group them using k-means clustering. We computed the number of times each household has ever bought a specific item. Since the number of purchasable items at the stores is about 2400, it is very difficult to cluster the households based on their bought items. We need to do a dimensionality reduction on the bought items, and turn them into groups. To do so, we will create a **bag of words** analogue, which we call **bag of commodities**. Then we will do SVD, where keep 300 features. We get a **household vs. group** , and a **group vs. item** matrix describing all the groups in terms of items. We applied TF-IDF normalisation in order to reduce the importance of the articles bought frequently by almost every household.   -->
-
-
-
-<!-- Finally we can find if there is any relation between these clusters and the demographic data.  
-The results show that there are groups of items often bought together, such as baby items or wine and cigarettes. However, the groups that overshadowed all others was the gasoline group, as it is the most bought item overall by far. -->
+Now households can be compared amongst these groups instead of a huge list of items. From groups we chose the most meaningful ones which were used to cluster households.
 
 >## Kmeans
 **Technical:** We chose the optimal number of cluster by calculating the silhouette coefficient for each possible cluster number and taking the highest one. The groups obtained by kmeans clustering appear to be well separated if we plot them with the 3 groups that explain most of the variance.
@@ -293,20 +291,5 @@ The reason for this is that the most connected items in the graph correspond to 
 Therefore, it is understandable why unhealthy items are probably always bought by the same households.
 This corroborates the finding that in the present dataset that fatty and salty items are consumed together.
 
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
-
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="<name>...">
-    <ul id="results-container"></ul>
-</div>
-<script>
-    simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/graph_data.json',
-        searchResultTemplate: '<li><a {node}::::::{neighbors}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
-
-    })
-</script>
+# Conclusion
+We indeed saw through the nutriton project that data analysis could be used for good, if handled properly. On another hand, consumers should really be aware of the personnal data gathered on their behalf, and know what type of products big companies developp based on these precious values. We hope that this project helped you  to understand that.
