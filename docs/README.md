@@ -138,6 +138,7 @@ Now households can be compared amongst these groups instead of a huge list of it
 <p align="center">
   <img src="/assets/images_hh_groups/scatter_matrix_kmeans_labels.png" alt="draw" width="600">
 </p>
+[filename](_media/kmeans_clusters.html ':include')
 
 
 

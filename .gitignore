@@ -3,7 +3,6 @@ data/
 src/utilities/__pycache__/health_functions.cpython-37.pyc
 src/utilities/.DS_Store
 
-
 ### Jekyll
 _site/
 assets/.DS_Store
