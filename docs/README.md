@@ -121,7 +121,7 @@ The chosen items are as follows. The following list shows the label, together wi
 * Premium Items: FRZN SS PREMIUM ENTREES/DNRS/N (0.8)	CIGARETTES (0.15)	YOGURT NOT MULTI-PACKS (0.05)
 * Soft Drinks: SOFT DRINKS 12/18&15PK CAN CAR(0.3)	SOFT DRINKS 20PK&24PK CAN CARB (0.2)	FRZN SS PREMIUM ENTREES/DNRS/N(0.1)
 
-Now households can be compared amongst these groups instead of a huge list of items. From groups we chose the most meaningful ones which were used to cluster households.
+Now households can be compared amongst these groups instead of a huge list of items. From these groups we chose the most meaningful ones which were used to cluster households.
 
 >## Kmeans
 **Technical:** We chose the optimal number of cluster by calculating the silhouette coefficient for each possible cluster number and taking the highest one. The groups obtained by kmeans clustering appear to be well separated if we plot them with the 3 groups that explain most of the variance.
