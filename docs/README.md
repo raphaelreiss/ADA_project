@@ -43,14 +43,14 @@ As we can see, the data looks coherent: for a same intake of energy, the "averag
 First things first, we take a look at the nutritional values of the most consumed articles in terms of mass: it is the occasion to check how well the parser performs by comparing the article and parsed names.
 
 <!-- ![filename](assets/images_health/Mass_sorted_items.html ':include :type=iframe width=100% height=500px') -->
-<iframe width="100%" height="650" src="/assets/images_health/Mass_sorted_items.html" /></iframe>
+<iframe width="100%" height="650" src="_media/Mass_sorted_items.html" /></iframe>
 
 We notice a few things: the eggs and the meat are significantly richer than the other articles in terms of cholesterol while canola and soybean oils look way richer for polyunsaturated fat.
 
 The idea consists now to identify which articles are the most responsible for the mass consumption of a given nutrient: i.e. to find the items which bring the biggest mass of a given nutrient in people's plates.
 
 
-<iframe width="100%" height="650" src="/assets/images_health/nutrient_responsability.html" /></iframe>
+<iframe width="100%" height="650" src="_media/nutrient_responsability.html" /></iframe>
 
 Interestingly, despite the fact that milk contains about 30 times less cholesterol than egg, it ends up being the main source of cholesterol for people due to its massive mass consumption. Overall, dairy and meat represent the main sources.
 
@@ -68,7 +68,7 @@ Taking advantage of the rest of the datas, we analyzed the nutritional values by
 
 This goes along with the lowering of energy costs through technological innovation as described in the ["Fat and Sugar: An Economic Analysis"(Drewnowski A.) 2003](https://www.ncbi.nlm.nih.gov/pubmed/12612164) and confirms that our parser system performs well overall: all the fat-related nutriments seem to change significantly between the 2 classes.
 
-## Average nutriment consumption
+## Average nutrient consumption
 A mandatory step consists in defining which type of nutriments are consumed together: this was achieved by computing the correlation matrix of the average nutrients consumption per household between all nutrients (first matrix). However, food items present a natural correlation across nutrients, as different types of fats are usually present together in a given product. In order to counteract this trend, we subtracted the second matrix to the first one in order to identify correlations which are not explained by the natural presence in items, but because people tend to consume them together.
 
 <img src="/assets/images_health/consumption_nutriments_correlation.png" alt="drawing" width="1500"/>
@@ -84,7 +84,7 @@ Our dataset thus definitely present symptoms of malnutrtion at some scale.
 We just saw that with a few data at first look innocent, we can gain suprising insight into people's life using a few data-analysis tools and a bit of time. Does that mean that one should systematically refuse to share his/her data? We think personally answer negatively, as we will see in this section that data science can be used for good as well.
 We indeed developped a basic tool where we detect the outliers householdsfor which the average food consumption is abnormal for a specific nutrient using the interquantile-range method: the households are then projected on the 2 first principal components computed on their average nutrition values for sake of visualization.
 
-<iframe width="100%" height="650" src="/assets/images_health/Outliers_detection.html" /></iframe>
+<iframe width="100%" height="650" src="_media/Outliers_detection.html" /></iframe>
 
 As we can see, the first PC seems strongly correlated with fat and energy in general, while the second one looks more specific to sugar. Taking the strong correlation between fat and cholesterol discovered in the previous section into account, we see that outliers for cholesterol and protein are massively overlapping with the one for fat in general, but don't share much with the sugar, showing that cholesterol/fat/protein and sugars excessive consumptions are two separate issues to tackle differently, at least for extreme consumption.
 
@@ -261,8 +261,8 @@ we were able to get incredible insight on people's health, who they are, and wha
 by doing some natural language processing and web-scrapping. We found that fat consumption seems to be higher than the recommended intake for the aggregate community, 
 and for the lower income groups it is even higher. 
 Second, using the total sales value of every item bought by the households, we grouped items 
-and clustered households with respect to how they consumed these groups. The clusters studied were the group of drivers, smokers and drinkers, passive consumers and new parents.  The age groups o which Even though the analysis done is at a very general level,
-This analysis shows the exposure of people's privacy and potentially sensitive information from a seemingly harmless gathering of data. Nevertheless, 
+and clustered households with respect to how they consumed these groups. The clusters studied were the group of drivers, smokers and drinkers, passive consumers and new parents. 
+Even though the analysis done is at a very general level, it shows the exposure of people's privacy and potentially sensitive information from a seemingly harmless gathering of data. Nevertheless, 
 this gathering of data also allows us to draw interesting links between the items being bought. 
 These links range from trivial/obvious relations such as the one between pears-bananas,
 to much deeper relations such as the one between tequila and salt, which serve as echos of the underlying culture.  
