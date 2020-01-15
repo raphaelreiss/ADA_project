@@ -114,12 +114,17 @@ The second question that came to our mind was trivially if it was possible to gr
 
 
 After performing dimensionality reduction, we observed groups of purchased items, and we tried to label them with keywords representing these items.
-The chosen items are as follows. The following list shows the label, together with the items of top score.
-* Gasoline: GASOLINE-REG UNLEADED (0.97)	BEERALEMALT (0.15), soft drinks (0.05) We can see this group contains a high score in gasoline compared to the next groups
-* Liquor and Cigarettes: BEERALEMALT LIQUORS	CIGARETTES	AUSTRALIAN/NZ WINES
-* Baby items: BABY DIAPERS(0.95)	INFANT FORMULA MILK BASE (0.40)	BEERALEMALT LIQUORS(0.05)
-* Premium Items: FRZN SS PREMIUM ENTREES/DNRS/N (0.8)	CIGARETTES (0.15)	YOGURT NOT MULTI-PACKS (0.05)
-* Soft Drinks: SOFT DRINKS 12/18&15PK CAN CAR(0.3)	SOFT DRINKS 20PK&24PK CAN CARB (0.2)	FRZN SS PREMIUM ENTREES/DNRS/N(0.1)
+The chosen items are as follows. The following list shows the label, together with the items of top score per group. 
+* 1. **Gasoline**: GASOLINE-REG UNLEADED (0.97)	BEERALEMALT (0.15), SOFT DRINKS (0.05),... 
+    * We can see this group contains a high score in gasoline compared to the next items. This group is the top group from SVD, so we thought it was important to explain the varaince of the data.
+* 2. **Liquor and Cigarettes**: BEERALEMALT LIQUORS (0.75)	CIGARETTES(0.47)	AUSTRALIAN/NZ WINES (0.04) VALUE GLASS WINE(0.04) PREMIUM 750ML WINES (0.04)...
+    * We can see this group contains liquor and cigerette items.
+* 3. **Baby items**: BABY DIAPERS(0.95)	INFANT FORMULA MILK BASE (0.40), BEERALEMALT LIQUORS (0.25)	INFANT FORMULA SPECIALTY(0.16)
+    * Even though this group contains beer as the third item, its weight is much smaller compared to the first 2. Also, the consecutive items are all related to babies.
+* 4. **Premium Items**: FRZN SS PREMIUM ENTREES/DNRS/N (0.8)	CIGARETTES (0.15)	PREMIUM BREAD(0.1) PREMIUM 750ML WINES (0.09)
+    * These are discounted items that are in promotion.
+* 5. **Soft Drinks**: SOFT DRINKS 12/18&15PK CAN CAR(0.3)	SOFT DRINKS 20PK&24PK CAN CARB (0.2)	FRZN SS PREMIUM ENTREES/DNRS/N(0.1)
+    * Soft drinks are very recurrent in this group
 
 Now households can be compared amongst these groups instead of a huge list of items. From these groups we chose the most meaningful ones which were used to cluster households.
 
@@ -129,94 +134,52 @@ Now households can be compared amongst these groups instead of a huge list of it
 <!-- <img src="/assets/images_hh_groups/kmeans_nb_of_clusters.png" alt="Optimal_number_k_" style="zoom:50%;float: left; margin-right: 10px;" /> -->
 
 
-<img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" width="700" class="center">
+<!-- <img src="/assets/images_hh_groups/3d_scatter_plot_of_groups.png" alt="Optimal_number_k_" width="700" class="center"> -->
 
 
 
 
 
-<p align="center">
+<!--<p align="center">
   <img src="/assets/images_hh_groups/scatter_matrix_kmeans_labels.png" alt="draw" width="600">
-</p>
-[filename](_media/kmeans_clusters.html ':include')
+</p>-->
+
+<iframe width="80%" height="450" src="_media/kmeans_clusters.html" /></iframe>
 
 
 
 
-| Color         |  Group                  |
-| ------------- |:-----------------------:|
-| Red           |  Late night snacks      |
-| Blue          |  Gasoline group         |
-| Green         |  Cigs & liquor          |
-| Yellow        |  Baby items             |
-| Cyan          |  Soft drinks            |
+| Color         |  Group                  |  Description                  
+| ------------- |:-----------------------:|:-----------------------:
+| Red           |  New Parents            |  High in Baby Items and low on cigarettes.            
+| Blue          |  Drivers                |  High in Gasoline.              
+| Green         |  Passive consumers      |  Low in all groups and high on premium items (not shown here)      
+| Yellow        |  Smokers and Drinkers   |  High in cigarettes and liquor and low on baby items (thankfully)
 
 
-We see that even though some clusters overlap we see that clusters are representative:
+This analysis shows that we can profile households based on their purchases by very little effort without needing to manually classify the purchased items. The next step is to see how these clusters relate to the known demographic data.
 
-There is a blue group
-* Blue: Gasoline group: gasoline consumption clearly higher than all other groups, But there is significant separation with the late night snacks group, which indicates that people who come to buy gasoline often also get food. Some overlapp with cigs & liquors and baby items.
-
-* Red: Late night snackers: Also buy gasoline but barely anything else, also some overlap with soft drinks and baby items
-
-* Green: Smokers and Drinkers: medium snacks and high gasoline
-
-* Yellow: Responsible Drivers : also consume snacks, medium consumption of cigarettes and liquor!
-
-* Magenta: Dinner: Clearly stands out for high gasoline, cigarettes and liquor consumption
-
-* Cyan: Soft drinks: Very diffuse/ sparse group, Indicates that the households in this group have a very varied consumption of items in other groups. Suggests that soft drinks appeal to a very large demographic group
-
-
-
-From the distributions we see that the gasoline group is strongly skewed to the right, approximately follows a heavy tailed distribution and all the values are positive, which means that all the households consume from this group. Liquor and cigarettes and Late night snacks have similar distributions skewed to the left, meaning that most people do not buy from these groups.
-
-Another reason why there are not more specific individual patterns emerging from this analysis is that all our transaction data is at the household level and the composition of a household can be very heterogeneous, so we would almost certainly find other more granular consumption patterns with individual transaction data.
-
-Also, the shopping card might only be used for the weekly grocery shopping but the individual members of a household might go to the store for smaller transactions without using the card, as it may remain with a single person.
 
 ## Demographics
 
+### Household Age Distribution
+The following graph shows the distribution of the age groups with respect to the clusters. The y axis corresponds to the fraction of households of the group.
+<iframe width="100%" height="450" src="_media/Age_distributions.html" /></iframe>
 
-
+* Drivers: Even though there is not large correlation with age, the age group with the largest amount of drivers is the age of 35-45.
+* Passive Consumers: We see that the group is largest at older ages. This is expected since old people are probably less interested in buying things.
+* Drinkers and Smokers: Not large correlation, but we see that the maximum proportion of households is observed at the younger ages.
+* New parents: As expected, most of the new parents occur at the age of 25-34, and there's no new parents older than 54. 
 A more detailed analysis of the demographic composition of our cluster seems to confirm this hypothesis. Here, the demographic distributions are shown for each group to enable to get a better sense of their respective demographic compositions.
 
-<img src="/assets/images_hh_groups/demo_distr_dummy.png" alt="Optimal_number_k_" style="zoom:65%;" />
+### Household Size Distribution
+The following graph shows the distribution of the household size with respect to the clusters.
+<iframe width="100%" height="450" src="_media/Family_size_distributions.html" /></iframe>
 
- Indeed, even tough the products purchased by the different groups are vastly different, think of baby items versus cigarettes and wine, he most representative individual of each group has exactly the same age, income and lives in a household of the same size. It is however interesting to note that these parameters differ significantly from the US median demographic parameters.
-
-
-| age          |	income |	household | size |
-|--------------|:-------:|:----------:|----- |
-|Gasoline      |	45-54  |	50-74K    | 	2  |
-|Late snacks   |	45-54  |	35-49K 	  |  2   |
-|Cigs & liquor |	45-54  |	50-74K 	  |  2   |
-|US population |	38.2 	 |  32K 	    | 2.6  |
-
-
-
-Also, observing the distribution of the demographic parameters visually in the clusters do not yield explicit groups. The households appear to be randomly distributed.
-
-<img src="/assets/images_hh_groups/demographic_grps_dummy.png" alt="Optimal_number_k_" style="zoom:72%;" />
-
-To summarise, our clustering approach to discover household groups who have similar consumption patterns yielded many different groups that focus on different item categories. However, the explained variance of this approach was not very high and the groups were mainly overshadowed by the enormous gasoline consumption. One interesting aspect uncovered is that unhealthy eating habbits such as soft drinks and alcohol consumption are widespread among these household.  
-
-In the next part, we will take a closer look at food consumption among different population subgroups.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Drivers: No visual correlation.
+* Passive Consumers: No visual correlation.
+* Drinkers and Smokers: Interstingly the proportion of drinkers and smokers seems to increase with household size. 
+* New parents: Houses with 2 members have the largest fraction of new parents. We see that the fraction decreases with an increasing household size as expected. 
 
 
 
@@ -245,7 +208,7 @@ Feel free to play with the physics package (controls are under the graph)!
 
 The spring constant of the edges represents the weight of the edges.
 
-![filename](_media/graph_commodities.html ':include :type=iframe width=100% height=500px')
+[graph](_media/graph_commodities.html ':include :type=iframe width=100% height=500px')
 
 
 Many interesting groups appear. Most notably there is a strongly connected cluster at the center that has food items such as pasta, sugar, beef, and there are smaller clusters around it, with few
@@ -293,4 +256,13 @@ Therefore, it is understandable why unhealthy items are probably always bought b
 This corroborates the finding that in the present dataset that fatty and salty items are consumed together.
 
 # Conclusion
-We indeed saw through the nutriton project that data analysis could be used for good, if handled properly. On another hand, consumers should really be aware of the personnal data gathered on their behalf, and know what type of products big companies developp based on these precious values. We hope that this project helped you  to understand that.
+The powers of data are elucidated in this project: just starting with transaction data and assuming zero knowledge on the items or the buyers themselves, 
+we were able to get incredible insight on people's health, who they are, and what they consume. First, we analyzed the nutrient consumption 
+by doing some natural language processing and web-scrapping. We found that fat consumption seems to be higher than the recommended intake for the aggregate community, 
+and for the lower income groups it is even higher. 
+Second, using the total sales value of every item bought by the households, we grouped items 
+and clustered households with respect to how they consumed these groups. The clusters studied were the group of drivers, smokers and drinkers, passive consumers and new parents.  The age groups o which Even though the analysis done is at a very general level,
+This analysis shows the exposure of people's privacy and potentially sensitive information from a seemingly harmless gathering of data. Nevertheless, 
+this gathering of data also allows us to draw interesting links between the items being bought. 
+These links range from trivial/obvious relations such as the one between pears-bananas,
+to much deeper relations such as the one between tequila and salt, which serve as echos of the underlying culture.  
