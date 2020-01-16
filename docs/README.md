@@ -218,15 +218,15 @@ isolated pairs orbitating in the atmosphere. Let's look at different features fr
 While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings.
 * **Sea food Group**
 ![image]("assets/images_graph_seafood_groups.png")
- <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="500"/>
+ <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="100%"/>
 <!-- what's wrong with this???-->
 
 * **Cleaning Products Group**
- <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="300"/>
+ <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="100%"/>
 
 
 * **Gasoline Group**
- <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="500"/>
+ <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="100%"/>
 
 But there's many many more groups. Can you find some more?
 ### Recipe Discovery
