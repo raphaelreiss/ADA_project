@@ -219,7 +219,7 @@ While the central cluster contains mainly food items, very interesting smaller g
 * **Sea food Group**
 ![image]("assets/images_graph_seafood_groups.png")
  <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="500"/>
-
+<!-- what's wrong with this???-->
 
 * **Cleaning Products Group**
  <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="300"/>
