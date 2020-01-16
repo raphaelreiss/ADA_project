@@ -218,37 +218,37 @@ isolated pairs orbitating in the atmosphere. Let's look at different features fr
 While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings.
 * **Sea food Group**
 ![image]("assets/images_graph_seafood_groups.png")
- <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="100%"/>
+ <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="400px"/>
 <!-- what's wrong with this???-->
 
 * **Cleaning Products Group**
- <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="100%"/>
+ <img src="/assets/images_graph/cleaning_groups.png" alt="cleaning group" width="400px"/>
 
 
 * **Gasoline Group**
- <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="100%"/>
+ <img src="/assets/images_graph/gasoline_group.PNG" alt="gasoline group" width="400px"/>
 
 But there's many many more groups. Can you find some more?
 ### Recipe Discovery
 Sometimes unrelated products are observed, but after googling, we realize these correspond to recipes:
 * **Sweet Potato Dinner Rolls**
- <img src="/assets/images_graph/sweet_potato_v2.PNG" alt="Sweet_potatoes" width="400"/>
+ <img src="/assets/images_graph/sweet_potato_v2.PNG" alt="Sweet_potatoes" width="400px"/>
 
 * **Mushroom Gravy**
- <img src="/assets/images_graph/mushroom_gravy_combo.PNG" alt="Mushroom_Gravy" height="400"/>
+ <img src="/assets/images_graph/mushroom_gravy_combo.PNG" alt="Mushroom_Gravy" height="400px"/>
 
 * **Pina Colada**
-<img src="/assets/images_graph/pina_colada.PNG" alt="Pina_Colada" width="400"/>
+<img src="/assets/images_graph/pina_colada.PNG" alt="Pina_Colada" width="400px"/>
 
 ## Item Importance
 We can rank items based on how connected they are. The following figure shows the degree distribution of the graph:
-<img src="/assets/images_graph/degree_distribution1.png" alt="deg distribution" width="400"/>
+<img src="/assets/images_graph/degree_distribution1.png" alt="deg distribution" width="400px"/>
 
 We see that while most items have only one neighbor, there is a group of items with 20-40 neighbors.
 
 The following figure shows what these most connected components are on the top plot,
 and these are compared with the most popular items on the bottom plot:
-<img src="/assets/images_graph/degree_freq_distribution.png" alt="top degree" width="400"/>
+<img src="/assets/images_graph/degree_freq_distribution.png" alt="top degree" width="400px"/>
 
 We see that the most of the connected items are not very healthy items such as snacks and canned foods.
 It is interesting to see that the most popular items, such as milk or bananas are not the most connected items in the graph.
