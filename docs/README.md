@@ -217,6 +217,7 @@ isolated pairs orbitating in the atmosphere. Let's look at different features fr
 ### Item Similarity
 While the central cluster contains mainly food items, very interesting smaller groups are seen in the surroundings.
 * **Sea food Group**
+![image]("assets/images_graph_seafood_groups.png")
  <img src="/assets/images_graph/seafood_groups.png" alt="sea food group" width="500"/>
 
 
